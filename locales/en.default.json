@@ -23,7 +23,7 @@
       "login_form_submit": "Enter",
       "signup_form_email_label": "Email",
       "signup_form_success": "We will send you an email right before we open!",
-      "admin_link_html": "Are you the store owner? <a href=\"\/admin\" class=\"text-link\">Log in here<\/a>",
+      "admin_link_html": "Are you the store owner? <a href=\"/admin\" class=\"text-link\">Log in here</a>",
       "password_link": "Enter using password",
       "powered_by_shopify_html": "This shop will be powered by {{ shopify }}"
     },
@@ -47,8 +47,8 @@
       "submit": "Search",
       "read_more": "Read more",
       "results_count_html": {
-        "one": "{{ count }} match for <strong>{{ terms }}<\/strong>",
-        "other": "{{ count }} matches for <strong>{{ terms }}<\/strong>"
+        "one": "{{ count }} match for <strong>{{ terms }}</strong>",
+        "other": "{{ count }} matches for <strong>{{ terms }}</strong>"
       },
       "products": "Products",
       "pages_and_articles": "Pages and articles"
@@ -90,9 +90,9 @@
       "remove": "Remove",
       "note": "Special instructions for seller",
       "taxes_and_shipping_at_checkout": "Taxes and shipping calculated at checkout",
-      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping<\/a> calculated at checkout",
+      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping</a> calculated at checkout",
       "taxes_included_but_shipping_at_checkout": "Tax included and shipping calculated at checkout",
-      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping<\/a> calculated at checkout.",
+      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
       "update": "Update Cart",
       "checkout": "Check Out",
       "empty": "Your cart is currently empty.",
@@ -158,9 +158,9 @@
       "address1": "Address1",
       "address2": "Address2",
       "city": "City",
-      "country": "Country\/Region",
+      "country": "Country/Region",
       "province": "Province",
-      "zip": "Postal\/Zip Code",
+      "zip": "Postal/Zip Code",
       "phone": "Phone",
       "set_default": "Set as default address",
       "add": "Add Address",
@@ -239,7 +239,7 @@
       "previous_slide": "Previous slide",
       "pause_slideshow": "Pause slideshow",
       "play_slideshow": "Play slideshow",
-      "navigation_instructions": "Use left\/right arrows to navigate the slideshow or swipe left\/right if using a mobile device",
+      "navigation_instructions": "Use left/right arrows to navigate the slideshow or swipe left/right if using a mobile device",
       "slide_number": "Slide {{ slide_number }}, current"
     },
     "onboarding": {
@@ -276,8 +276,8 @@
       "on_sale": "Sale",
       "on_sale_from_html": "On sale from {{ price }}",
       "from_text_html": "From {{ price }}",
-      "include_taxes": "Tax included.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping<\/a> calculated at checkout.",
+      "include_taxes": "inc VAT",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
       "quantity": "Quantity",
       "add_to_cart": "Add to Cart",
       "full_details": "Full details",
@@ -287,7 +287,7 @@
         "other": "{{ count }} available"
       },
       "collection_return": "Back to {{ collection }}",
-      "product_added_to_cart_html": "Item added to cart. <span>View cart and check out<\/span>.",
+      "product_added_to_cart_html": "Item added to cart. <span>View cart and check out</span>.",
       "stock_unavailable": "The item could not be added to your cart because there are not enough in stock.",
       "unit_price_label": "Unit price"
     }
@@ -311,7 +311,7 @@
       "get_directions": "Get directions",
       "address_error": "Error looking up that address",
       "address_no_results": "No results for that address",
-      "address_query_limit_html": "You have exceeded the Google API usage limit. Consider upgrading to a <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Premium Plan<\/a>.",
+      "address_query_limit_html": "You have exceeded the Google API usage limit. Consider upgrading to a <a href=\"https://developers.google.com/maps/premium/usage-limits\">Premium Plan</a>.",
       "auth_error_html": "There was a problem authenticating your Google Maps API Key."
     }
   },
