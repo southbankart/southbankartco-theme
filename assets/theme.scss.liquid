@@ -1223,10 +1223,10 @@ html {
   @include clearfix();
   max-width: $width-site;
   margin: 0 auto;
-  padding: 0 ($gutter-site / 2);
+  padding: 0 $gutter-site * 2;
 
   @include media-query($medium-up) {
-    padding: 0 $gutter-site;
+    padding: 0 $gutter-site * 2;
   }
 }
 
