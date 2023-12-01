@@ -206,7 +206,7 @@
 $grid-medium: 750px;
 $grid-large: 990px;
 $grid-widescreen: 1400px;
-$grid-gutter: 20px;
+$grid-gutter: 30px;
 
 $small: 'small';
 $medium: 'medium';
@@ -326,7 +326,7 @@ $color-success: #fff;
 $color-success-bg: #59ac6c;
 
 /*================ Sizing Variables ================*/
-$width-site: 1180px;
+$width-site: 1400px;
 $gutter-site: 20px;
 $gutter-heading: 20px;
 $gutter-slideshow: 0.625rem; // 10px
@@ -1913,8 +1913,8 @@ select {
   font-family: $font-stack-body;
   font-style: $font-style-body;
   font-weight: $font-weight-body;
-  color: $color-body-text;
-  line-height: 1.375;
+  color: lighten($color-body-text, 20%);
+  line-height: 1.5;
 }
 
 // Prevent zoom on touch devices in active inputs
@@ -2207,9 +2207,9 @@ th {
 input,
 textarea,
 select {
-  background-color: $color-form;
+  background-color: transparent;
   color: $color-form-text;
-  border: 0;
+  border: 1px solid $color-border-body-darken;
   max-width: 100%;
 
   &[disabled] {
@@ -2382,6 +2382,7 @@ textarea {
 .btn--full {
   display: block;
   width: 100%;
+  border-radius: 50px;
 }
 
 /*================ Default link styles ================*/
@@ -4006,7 +4007,7 @@ html {
 }
 
 .product-single__policies {
-  font-size: em($font-size-base - 1);
+  font-size: em($font-size-base - 4);
 }
 
 .product-unit-price {
@@ -4144,7 +4145,7 @@ html {
 }
 
 .btn--sold-out[disabled] {
-  background-color: $color-error-bg;
+  background-color: $color-btn-secondary;
   color: $color-error-input-text;
 }
 
@@ -4152,7 +4153,7 @@ html {
   padding-left: 5px;
   padding-right: 5px;
   white-space: normal;
-  border-radius: 3px;
+  border-radius: 50px;
   @include flex(1);
 }
 
@@ -4227,7 +4228,7 @@ html {
 .product__photo-container {
   width: 100%;
   position: relative;
-  max-width: 480px;
+  /* max-width: 480px; */
   margin: 0 auto;
 
   &.hide {
@@ -5908,6 +5909,7 @@ body.modal--is-active {
 
   .btn {
     margin-top: $gutter-site / 2;
+
   }
 
   .icon-pin {
