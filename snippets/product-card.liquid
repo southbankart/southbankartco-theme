@@ -13,7 +13,7 @@
   {% assign image = product.featured_image %}
   <div class="product-card__image-container">
     <div class="product-card__image-wrapper">
-      <div class="product-card__image js" style="max-width: {% include 'image-width' with image: image, width: 235 %}px;" data-image-id="{{ image.id }}" data-image-with-placeholder-wrapper>
+      <div class="product-card__image js" style="max-width: {% include 'image-width' with image: image, width: 289 %}px;" data-image-id="{{ image.id }}" data-image-with-placeholder-wrapper>
         <div style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100 }}%;">
           {% assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
           <img class="lazyload"
