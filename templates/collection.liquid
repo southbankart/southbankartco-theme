@@ -25,7 +25,7 @@
   <div class="grid grid--no-gutters grid--uniform">
 
     {% for product in collection.products %}
-      <div class="grid__item small--one-half medium-up--one-fifth">
+      <div class="grid__item small--one-half medium-up--one-quarter">
         {% include 'product-card', product: product %}
       </div>
     {% else %}
@@ -50,7 +50,7 @@
                 {% when 10 %}
                   {% assign collection_index = 4 %}
               {% endcase %}
-              <div class="grid__item small--one-half medium-up--one-fifth">
+              <div class="grid__item small--one-half medium-up--one-quarter">
                 <a href="/admin/products" class="product-card">
                   <div class="product-card__image-container">
                     <div class="product-card__image-wrapper">
