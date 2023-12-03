@@ -87,7 +87,11 @@
             <p class="product-single__vendor">{{ product.vendor }}</p>
           {% endif %}
 
+          {% if product.vendor != "Not specified" %}
+            <div class="product-card__brand">{{ product.vendor }}</div>
+          {% endif %}
           <h1 itemprop="name" class="product-single__title">{{ product.title }}</h1>
+
 
           <ul class="product-single__meta-list list--no-bullets list--inline{% if shop.taxes_included or shop.shipping_policy.body != blank %} product-single__price-container{% endif %}">
             <li id="ProductSaleTag-{{ section.id }}" class="{% unless product.compare_at_price > product.price %}hide{% endunless %}">
