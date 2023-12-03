@@ -33,7 +33,7 @@
     </div>
   </div>
   <div class="product-card__info">
-    {% if settings.product_vendor_enable %}
+    {% if product.vendor != "Not specified" %}
       <div class="product-card__brand">{{ product.vendor }}</div>
     {% endif %}
 
