@@ -1,0 +1,41 @@
+{% comment %}
+  Renders a stock status icon
+
+  Accepts:
+  - status: {String} 'in-stock', 'low-stock', 'backorder', 'out-of-stock', 'available'
+  - size: {String} 'small' or 'large' (optional, default: 'small')
+
+  Usage:
+  {% render 'stock-icon', status: 'in-stock', size: 'small' %}
+{% endcomment %}
+
+{%- liquid
+  assign size = size | default: 'small'
+  assign icon_size = '15'
+  if size == 'large'
+    assign icon_size = '20'
+  endif
+-%}
+
+{%- case status -%}
+  {%- when 'in-stock' -%}
+    <svg width="{{ icon_size }}" height="{{ icon_size }}" aria-hidden="true">
+      <circle cx="7.5" cy="7.5" r="7.5" fill="rgb(62,214,96, 0.3)"/>
+      <circle cx="7.5" cy="7.5" r="5" stroke="rgb(255, 255, 255)" stroke-width="1" fill="rgb(62,214,96)"/>
+    </svg>
+  {%- when 'low-stock' or 'backorder' -%}
+    <svg width="{{ icon_size }}" height="{{ icon_size }}" aria-hidden="true">
+      <circle cx="7.5" cy="7.5" r="7.5" fill="rgb(255,193,7, 0.3)"/>
+      <circle cx="7.5" cy="7.5" r="5" stroke="rgb(255, 255, 255)" stroke-width="1" fill="rgb(255,193,7)"/>
+    </svg>
+  {%- when 'out-of-stock' -%}
+    <svg width="{{ icon_size }}" height="{{ icon_size }}" aria-hidden="true">
+      <circle cx="7.5" cy="7.5" r="7.5" fill="rgb(200,200,200, 0.3)"/>
+      <circle cx="7.5" cy="7.5" r="5" stroke="rgb(255, 255, 255)" stroke-width="1" fill="rgb(200,200,200)"/>
+    </svg>
+  {%- when 'available' -%}
+    <svg width="{{ icon_size }}" height="{{ icon_size }}" aria-hidden="true">
+      <circle cx="7.5" cy="7.5" r="7.5" fill="rgb(62,214,96, 0.3)"/>
+      <circle cx="7.5" cy="7.5" r="5" stroke="rgb(255, 255, 255)" stroke-width="1" fill="rgb(62,214,96)"/>
+    </svg>
+{%- endcase -%}

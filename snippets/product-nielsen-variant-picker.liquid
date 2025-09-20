@@ -1,0 +1,121 @@
+{% comment %}
+  Renders rich Nielsen ready-made frames variant-picker with detailed information
+
+  Accepts:
+  - product: {Object} product object.
+  - block: {Object} passing the block information.
+  - product_form_id: {String} Id of the product form to which the variant picker is associated.
+  - update_url: {Boolean} whether or not to update url when changing variants. If false, the url isn't updated. Default: true (optional).
+  Usage:
+  {% render 'product-nielsen-variant-picker', product: product, block: block, product_form_id: product_form_id %}
+{% endcomment %}
+
+<div class="nielsen-rich-picker" data-section="{{ section.id }}" {{ block.shopify_attributes }}>
+
+  {%- unless product.has_only_default_variant -%}
+    <variant-selects
+      id="variant-selects-{{ section.id }}"
+      class="no-js-hidden nielsen-variant-selects"
+      data-section="{{ section.id }}"
+      data-url="{{ product.url }}"
+      {% if update_url == false %}
+        data-update-url="false"
+      {% endif %}
+    >
+      {%- assign first_option = product.options_with_values.first -%}
+      <div class="nielsen-variant-selector">
+        <div class="form__label">
+          {{ first_option.name }}
+          
+        </div>
+        
+        <div class="nielsen-size-options">
+          {%- for variant in product.variants -%}
+            <button 
+              type="button"
+              class="nielsen-size-btn{% if variant == product.selected_or_first_available_variant %} nielsen-size-btn--selected{% endif %}{% if variant.metafields.custom.popular %} nielsen-size-btn--popular{% endif %}"
+              data-variant-id="{{ variant.id }}"
+              data-option="{{ first_option.name | escape }}"
+              data-value="{{ variant.options.first | escape }}"
+              data-price="{{ variant.price | money_without_currency }}"
+              data-available="{{ variant.available }}"
+              data-inventory="{{ variant.inventory_quantity }}"
+              {% unless variant.available %}disabled{% endunless %}
+            >
+              <div class="nielsen-size-name">{{ variant.options.first }}</div>
+              {%- if variant.metafields.custom.nielsen_variant_subtitle -%}
+                <div class="nielsen-size-subtitle">{{ variant.metafields.custom.nielsen_variant_subtitle }}</div>
+              {%- endif -%}
+              <div class="nielsen-size-pricing">
+                <div class="nielsen-size-price">{{ variant.price | money }}</div>
+                  <div class="nielsen-size-stock">
+                    {% render 'stock-indicator', variant: variant, show_quantity: false, size: 'small' %}
+                  </div>
+              </div>
+            </button>
+          {%- endfor -%}
+        </div>
+      </div>
+      
+      <script type="application/json" id="nielsen-variants-{{ section.id }}">
+        {{ product.variants | json }}
+      </script>
+    </variant-selects>
+  {%- endunless -%}
+
+  <!-- Hidden inputs for variant selection -->
+  <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" form="{{ product_form_id }}">
+</div>
+
+<noscript class="product-form__noscript-wrapper-{{ section.id }}">
+  <div class="product-form__input{% if product.has_only_default_variant %} hidden{% endif %}">
+    <label class="form__label" for="Variants-{{ section.id }}">
+      {{- 'products.product.product_variants' | t -}}
+    </label>
+    <div class="select">
+      <select
+        name="id"
+        id="Variants-{{ section.id }}"
+        class="select__select"
+        form="{{ product_form_id }}"
+      >
+        {%- for variant in product.variants -%}
+          <option
+            {% if variant == product.selected_or_first_available_variant %}
+              selected="selected"
+            {% endif %}
+            {% if variant.available == false %}
+              disabled
+            {% endif %}
+            value="{{ variant.id }}"
+          >
+            {%- liquid
+              echo variant.title
+              echo variant.price | money | strip_html | prepend: ' - '
+              if variant.available == false
+                echo 'products.product.sold_out' | t | prepend: ' - '
+              endif
+              if variant.quantity_rule.increment > 1
+                echo 'products.product.quantity.multiples_of' | t: quantity: variant.quantity_rule.increment | prepend: ' - '
+              endif
+              if variant.quantity_rule.min > 1
+                echo 'products.product.quantity.minimum_of' | t: quantity: variant.quantity_rule.min | prepend: ' - '
+              endif
+              if variant.quantity_rule.max != null
+                echo 'products.product.quantity.maximum_of' | t: quantity: variant.quantity_rule.max | prepend: ' - '
+              endif
+              # TODO: enable theme-check once `item_count_for_variant` is accepted as valid filter
+              # theme-check-disable
+              assign cart_quantity = cart | item_count_for_variant: variant.id
+              # theme-check-enable
+              if cart_quantity > 0
+                echo 'products.product.quantity.in_cart_html' | t: quantity: cart_quantity | prepend: ' - '
+              endif
+            -%}
+          </option>
+        {%- endfor -%}
+      </select>
+      {% render 'icon-caret' %}
+    </div>
+  </div>
+</noscript>

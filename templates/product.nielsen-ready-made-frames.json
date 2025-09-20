@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
@@ -31,20 +22,56 @@
           "type": "price",
           "settings": {}
         },
-        "collapsible_tab_Xr9DJN": {
+        "trust_signals": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Collect in store only",
-            "icon": "map_pin",
-            "content": "<p>Please note that not all frames are held in stock, please allow at least 7 working days for frames to arrive.</p>",
+            "heading": "Authorised Stockist",
+            "icon": "star",
+            "content": "<p><strong>Made in Germany</strong> - Premium craftsmanship<br><strong>7-Day Collection</strong> - Fast turnaround<br><strong>Quality Guarantee</strong> - 100% satisfaction<br><strong>Expert Advice</strong> - Free consultation available</p>",
             "page": ""
           }
         },
-        "variant_picker": {
-          "type": "variant_picker",
+        "shipping_info": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collection & Delivery",
+            "icon": "truck",
+            "content": "<p><strong>Store Collection:</strong> Free - Most ready in 2-3 days<br><strong>Maximum Wait:</strong> Up to 7 days for supplier variations<br><strong>Delivery Available:</strong> Contact us for options</p>",
+            "page": ""
+          }
+        },
+        "warranty": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Warranty & Returns",
+            "icon": "lock",
+            "content": "<p><strong>Quality Guarantee:</strong> 2-year warranty<br><strong>Easy Returns:</strong> 30-day return policy<br><strong>Damage Protection:</strong> Free replacement<br><strong>Customer Support:</strong> Expert help available</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_Xr9DJN": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collection & Quality Assurance",
+            "icon": "map_pin",
+            "content": "<p><strong>Quality First:</strong> We ensure every frame arrives in perfect condition through our collection service.<br><strong>Fast Turnaround:</strong> Most frames ready for collection within 2-3 working days.<br><strong>Expert Inspection:</strong> Each frame is quality-checked before collection.<br><strong>Maximum Wait:</strong> Please allow up to 7 working days for supplier stock variations.</p>",
+            "page": ""
+          }
+        },
+        "nielsen_variant_picker": {
+          "type": "nielsen_picker",
           "settings": {
             "picker_type": "button",
-            "swatch_shape": "circle"
+            "swatch_shape": "circle",
+            "frame_help_text": "(Select your preferred frame size)",
+            "notice_title": "Ready-made frames:",
+            "notice_text": "These frames are pre-assembled and ready for collection. Quality-checked and carefully prepared - most ready within 2-3 days, maximum 7 days for supplier stock variations.",
+            "show_notice": true,
+            "show_size_guide": true,
+            "size_guide_text": "Size guide & advice",
+            "size_guide_url": "/pages/size-guide",
+            "show_upsell": true,
+            "upsell_text": "Add professional mount cutting or explore our complete framing service"
           }
         },
         "quantity_selector": {
@@ -93,11 +120,14 @@
         "title",
         "judge_me_reviews_preview_badge_CqYXb4",
         "price",
-        "collapsible_tab_Xr9DJN",
-        "variant_picker",
+        "trust_signals",
+        "description",
+        "nielsen_variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
+        "shipping_info",
+        "warranty",
+        "collapsible_tab_Xr9DJN",
         "share",
         "collapsible_tab_4gpLpY",
         "inventory_WWPTTr"
@@ -147,17 +177,11 @@
           }
         }
       },
-      "block_order": [
-        "judge_me_reviews_review_widget_3b76hW"
-      ],
+      "block_order": ["judge_me_reviews_review_widget_3b76hW"],
       "settings": {
         "include_margins": true
       }
     }
   },
-  "order": [
-    "main",
-    "related-products",
-    "1757839134edf1cfa7"
-  ]
+  "order": ["main", "related-products", "1757839134edf1cfa7"]
 }

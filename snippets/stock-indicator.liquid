@@ -1,0 +1,56 @@
+{% comment %}
+  Renders a stock indicator with circular icon
+
+  Accepts:
+  - variant: {Object} variant object
+  - show_quantity: {Boolean} whether to show inventory quantity (optional, default: false)
+  - size: {String} size of the icon - 'small' or 'large' (optional, default: 'small')
+
+  Usage:
+  {% render 'stock-indicator', variant: variant, show_quantity: true %}
+{% endcomment %}
+
+{%- liquid
+  assign show_quantity = show_quantity | default: false
+  assign size = size | default: 'small'
+  assign icon_size = '15'
+  if size == 'large'
+    assign icon_size = '20'
+  endif
+-%}
+
+{%- if variant.inventory_management == 'shopify' -%}
+  {%- if variant.inventory_quantity > 0 -%}
+    {%- if variant.inventory_quantity <= 10 -%}
+      {%- comment -%} Low stock / Backorder {%- endcomment -%}
+      {% render 'stock-icon', status: 'backorder', size: size %}
+      {%- if show_quantity -%}
+        {{ variant.inventory_quantity }} in stock
+      {%- else -%}
+        2-3 Days
+      {%- endif -%}
+    {%- else -%}
+      {%- comment -%} In stock {%- endcomment -%}
+      {% render 'stock-icon', status: 'in-stock', size: size %}
+      {%- if show_quantity -%}
+        {{ variant.inventory_quantity }} in stock
+      {%- else -%}
+        In Stock
+      {%- endif -%}
+    {%- endif -%}
+  {%- else -%}
+    {%- if variant.inventory_policy == 'continue' -%}
+      {%- comment -%} Out of stock but continue selling {%- endcomment -%}
+      {% render 'stock-icon', status: 'in-stock', size: size %}
+      Ready in 2-3 Days
+    {%- else -%}
+      {%- comment -%} Out of stock {%- endcomment -%}
+      {% render 'stock-icon', status: 'out-of-stock', size: size %}
+      Out of Stock
+    {%- endif -%}
+  {%- endif -%}
+{%- else -%}
+  {%- comment -%} No inventory management {%- endcomment -%}
+  {% render 'stock-icon', status: 'available', size: size %}
+  Available
+{%- endif -%}

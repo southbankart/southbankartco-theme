@@ -454,6 +454,8 @@
 
               {%- when 'variant_picker' -%}
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
+              {%- when 'nielsen_picker' -%}
+                {% render 'product-nielsen-variant-picker', product: product, block: block, product_form_id: product_form_id %}
               {%- when 'buy_buttons' -%}
                 {%- render 'buy-buttons',
                   block: block,
@@ -940,6 +942,115 @@
             }
           ],
           "default": "circle"
+        }
+      ]
+    },
+    {
+      "type": "nielsen_picker",
+      "name": "Nielsen Variant Picker",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "select",
+          "id": "picker_type",
+          "options": [
+            {
+              "value": "dropdown",
+              "label": "Dropdown"
+            },
+            {
+              "value": "button",
+              "label": "Button"
+            }
+          ],
+          "default": "button",
+          "label": "Picker type"
+        },
+        {
+          "id": "swatch_shape",
+          "label": "Swatch shape",
+          "type": "select",
+          "info": "Choose the shape of color swatches",
+          "options": [
+            {
+              "value": "circle",
+              "label": "Circle"
+            },
+            {
+              "value": "square",
+              "label": "Square"
+            },
+            {
+              "value": "none",
+              "label": "None"
+            }
+          ],
+          "default": "circle"
+        },
+        {
+          "type": "text",
+          "id": "frame_help_text",
+          "label": "Frame selection help text",
+          "default": "(Select your preferred frame size)",
+          "info": "Text shown below frame/size option labels"
+        },
+        {
+          "type": "text",
+          "id": "notice_title",
+          "label": "Notice title",
+          "default": "Ready-made frames:",
+          "info": "Title for the collection notice"
+        },
+        {
+          "type": "textarea",
+          "id": "notice_text",
+          "label": "Notice text",
+          "default": "These frames are pre-assembled and ready for immediate collection. Please allow 7 working days for frames to arrive at the store.",
+          "info": "Main text for the collection notice"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_notice",
+          "label": "Show collection notice",
+          "default": true,
+          "info": "Display the collection notice below the variant picker"
+        },
+        {
+          "type": "header",
+          "content": "Size Guide"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_size_guide",
+          "label": "Show size guide link",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "size_guide_text",
+          "label": "Size guide link text",
+          "default": "Size guide & advice"
+        },
+        {
+          "type": "url",
+          "id": "size_guide_url",
+          "label": "Size guide URL"
+        },
+        {
+          "type": "header",
+          "content": "Upsell"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_upsell",
+          "label": "Show upsell section",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "upsell_text",
+          "label": "Upsell text",
+          "default": "Add professional mount cutting or explore our complete framing service"
         }
       ]
     },
