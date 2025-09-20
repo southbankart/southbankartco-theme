@@ -1,0 +1,895 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_iDFmnL": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_FHzFDt": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/St_Georges_Circus_Mockup_NEW.jpg",
+            "heading": "Custom Framing",
+            "heading_size": "h2",
+            "subheading": "",
+            "button_label": "Click to book an appointment",
+            "link": "https://calendly.com/thesouthbankartco",
+            "button_style_secondary": false,
+            "box_align": "bottom-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-2",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_BHPkNN": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Clothbound_notebook_collection2.jpg",
+            "heading": "Handbound Notebooks",
+            "heading_size": "h2",
+            "subheading": "Cloth covered fountain pen friendly notebooks",
+            "button_label": "Shop now",
+            "link": "shopify://collections/clothbound-notebooks",
+            "button_style_secondary": false,
+            "box_align": "bottom-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-2",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_icGcaY": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/fine-arts-cover_1.jpg",
+            "heading": "New! Watercolour Paper",
+            "heading_size": "h2",
+            "subheading": "Paint, drawing and mixed media",
+            "button_label": "Shop the range",
+            "link": "shopify://collections/watercolour-pads",
+            "button_style_secondary": false,
+            "box_align": "bottom-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-2",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_FHzFDt",
+        "slide_BHPkNN",
+        "slide_icGcaY"
+      ],
+      "settings": {
+        "layout": "grid",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "image_with_text_UqhdnA": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_QCjtMR": {
+          "type": "heading",
+          "settings": {
+            "heading": "About our Framing",
+            "heading_size": "h1"
+          }
+        },
+        "text_7FR9r8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We make handcrafted custom picture frames to order. Our on site SE1 workshop is fully equipped to make, finish, and fit a wide range of frames and canvas. As <strong>conservation picture framers</strong>, we source and use premium quality materials and use specialist techniques to protect and enhance your artwork in the best way possible.</p><p></p>",
+            "text_style": "body"
+          }
+        },
+        "button_Mn7Ry7": {
+          "type": "button",
+          "settings": {
+            "button_label": "Find out more",
+            "button_link": "shopify://pages/about-framing",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_QCjtMR",
+        "text_7FR9r8",
+        "button_Mn7Ry7"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/4DD84792-41C0-455F-A18E-3B1006BAAF4E.jpg",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "scheme-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Custom Framing",
+            "heading_size": "h0"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Click to book an appointment",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": true
+          }
+        },
+        "text_Ahe84j": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button",
+        "text_Ahe84j"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/0AD6BB9D-BB75-4413-979B-00D2F0FCF92D.jpg",
+        "image_overlay_opacity": 20,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "video_73zqQC": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "ROSA Gallery Watercolours",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video": "shopify://files/videos/Untitled design (5).mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify://shop_images/Sakura-Micron-Black-Edition-Set-of-3.jpg",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_JamtFL": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Notebooks",
+        "heading_size": "h1",
+        "description": "<p>Lined, plain, dotted and squared for all your writing needs.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "notebooks",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-2",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collage_yaK6KB": {
+      "type": "collage",
+      "blocks": {
+        "image_L9pif6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Kaweco_Perkeo_FP_JuGrl_2021_Editorial_web_3-2_ps.jpg"
+          }
+        },
+        "product_g4MxHF": {
+          "type": "product",
+          "settings": {
+            "product": "kawecosportfountainpen",
+            "second_image": false
+          }
+        },
+        "collection_MgNDcm": {
+          "type": "collection",
+          "settings": {
+            "collection": "md-paper-notebooks"
+          }
+        }
+      },
+      "block_order": [
+        "image_L9pif6",
+        "product_g4MxHF",
+        "collection_MgNDcm"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Kaweco Fountain Pens",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_i8GYNz": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_W4GtBL": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_GEDeBr": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_qEamX3": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_W4GtBL",
+        "text_GEDeBr",
+        "buttons_qEamX3"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Kaweco_Perkeo_FP_JuGrl_2021_Editorial_web_3-2_ps.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Kaweco Fountain Pens",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "fountain-pens",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-2",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_atABpG": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_PAXgjV": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_D6gmip": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Find us</h2><h4><strong>21 London Road, London, SE1 6JX</strong></h4><p><em>Elephant & Castle underground 5 mins walk</em></p><p><em>Waterloo station 16 mins walk</em><br/></p><h2>Contact us</h2><p>Telephone: 0207 928 9722</p><p>Email: hello@southbankart.co.uk</p><p></p><p><br/></p>",
+            "text_style": "body"
+          }
+        },
+        "button_n8Ewam": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_PAXgjV",
+        "text_D6gmip",
+        "button_n8Ewam"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/1D046E51-52D9-4916-B9B3-0E40E4E72435.jpg",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_wzkU67": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Nielsen Readymade Frames",
+        "heading_size": "h1",
+        "description": "<p>The Nielsen range of ready made frames offers a simple solution with style and flair, ideal for those who are looking for a ready to go option.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "nielsen-readymade-frames",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-2",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multirow_ziw6GY": {
+      "type": "multirow",
+      "blocks": {
+        "row_Ep4Hki": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_LRqL6K": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_Ep4Hki",
+        "row_LRqL6K"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_A3RCrX": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Fountain Pens",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "fountain-pens",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_product_JtXiEW": {
+      "type": "featured-product",
+      "blocks": {
+        "text_m6cCY8": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_CpQQ8Y": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_pTNx3w": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_LWHc3T": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_MmafWz": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_aMgGEK": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_WUVjeG": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_m6cCY8",
+        "title_CpQQ8Y",
+        "price_pTNx3w",
+        "variant_picker_LWHc3T",
+        "quantity_selector_MmafWz",
+        "buy_buttons_aMgGEK",
+        "share_WUVjeG"
+      ],
+      "disabled": true,
+      "settings": {
+        "product": "paint-on-pad-green",
+        "color_scheme": "scheme-2",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_JgjLHd": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Nf9KTA": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Visit us in store",
+            "heading_size": "h1"
+          }
+        },
+        "text_GXXLAD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We've been making frames and supplying artist's materials to the local community and beyond for 23 years.</p><p>21 London Road, London, SE1 6JX</p>"
+          }
+        },
+        "button_j6YGNq": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "caption_rt3FY6": {
+          "type": "caption",
+          "settings": {
+            "caption": "Our nearest stations are Elephant & Castle underground  5mins",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Nf9KTA",
+        "text_GXXLAD",
+        "button_j6YGNq",
+        "caption_rt3FY6"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_banner_4r8hNY": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_7yf3W6": {
+          "type": "heading",
+          "settings": {
+            "heading": "Visit us in store",
+            "heading_size": "h1"
+          }
+        },
+        "text_VtaVxG": {
+          "type": "text",
+          "settings": {
+            "text": "21 London Road, London, SE1 6JX",
+            "text_style": "body"
+          }
+        },
+        "buttons_JWL84T": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_7yf3W6",
+        "text_VtaVxG",
+        "buttons_JWL84T"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/B5F63DC1-709C-47A6-B7A4-204D29B4DB35.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "collection_list_4frj6J": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_4dD9ac": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "fountain-pens"
+          }
+        },
+        "featured_collection_T9MdPB": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "md-paper-notebooks"
+          }
+        },
+        "featured_collection_HNrHLg": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sketchbook"
+          }
+        },
+        "featured_collection_M8cVrL": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_BEPgaj": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sketching-pencils"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_4dD9ac",
+        "featured_collection_T9MdPB",
+        "featured_collection_HNrHLg",
+        "featured_collection_M8cVrL",
+        "featured_collection_BEPgaj"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_KBMMJE": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_C8YLPD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ecologi",
+            "heading_size": "h1"
+          }
+        },
+        "text_k68qUx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wood and paper are a precious resource and we recognise the importance it plays in our industry. We have partnered up with Ecologi to support their responsible tree planting campaign and to try and give back and protect these resources for the future. To find out more about the work they do <a href=\"https://ecologi.com/thesouthbankartcompany\">click here</a></p>",
+            "text_style": "body"
+          }
+        },
+        "button_DArMNR": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_C8YLPD",
+        "text_k68qUx",
+        "button_DArMNR"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Copy_of_Responsible_tree_planting_f7ba0a17-b180-4f6c-bbf0-536d6d73a3d1.jpg",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_CH7L9m": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_jBkgai": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Copy_of_Responsible_tree_planting_1e32f30c-74e3-4b7b-bdcf-e7f0fbec69b7.jpg",
+            "title": "We've partnered with Ecologi",
+            "text": "<p>Wood and paper are a precious resource and we recognise the importance it plays in our industry. We have partnered up with Ecologi to support their responsible tree planting campaign and to try and give back and protect these resources for the future. To find out more about the work they do <a href=\"https://ecologi.com/thesouthbankartcompany\">click here</a></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_gWEryh": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/FATG_Enhanced_Logo_809c8efb-3ca3-44cb-a125-9a61ca65ac4d.jpg",
+            "title": "Fine Art Trade Guild",
+            "text": "<p>We are members of the Fine Art Trade Guild. An organisation that strives to promote excellence within the picture framing industry. The guild standards are developed for the guidance of the professional picture framing trade and to enable consumers to make informed choices. The standards are developed through proven facts, evidence based, using accepted UK accredited test procedures and their equivalent, but giving weight also to established framing practice and experience of products that have proven to stand the test of time. </p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_akzyKD": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_jBkgai",
+        "column_gWEryh",
+        "column_akzyKD"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "17578406260b43d68b": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_testimonials_carousel_zFLHQ8": {
+          "type": "shopify://apps/judge-me-reviews/blocks/testimonials_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "show_sample_reviews": false,
+            "reviews_selection": "all",
+            "products": [],
+            "star_rating": "4_to_5_star",
+            "max_reviews": 20,
+            "quote_marks_size": "small",
+            "product_name_text_size": "small",
+            "verified_badge_style": "icon",
+            "card_height": "medium",
+            "text_size": "small",
+            "stars_size": "medium",
+            "arrows_position": "bottom",
+            "max_width": 1100,
+            "corner_styling": "square",
+            "quote_marks_style": "serif",
+            "card_color": "#f9f9f9",
+            "stars_and_quote_marks_color": "#272c33",
+            "text_color": "#000000",
+            "arrows_color": "#000000",
+            "show_border": false,
+            "border_color": "#108474",
+            "show_drop_shadow": false,
+            "transition_speed": 5,
+            "header_text": "Customers are saying",
+            "show_average_rating": true
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_testimonials_carousel_zFLHQ8"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "slideshow_iDFmnL",
+    "image_with_text_UqhdnA",
+    "image_banner",
+    "video_73zqQC",
+    "featured_collection_JamtFL",
+    "collage_yaK6KB",
+    "image_banner_i8GYNz",
+    "featured_collection",
+    "image_with_text_atABpG",
+    "featured_collection_wzkU67",
+    "multirow_ziw6GY",
+    "featured_collection_A3RCrX",
+    "featured_product_JtXiEW",
+    "rich_text_JgjLHd",
+    "image_banner_4r8hNY",
+    "collection_list_4frj6J",
+    "image_with_text_KBMMJE",
+    "multicolumn_CH7L9m",
+    "17578406260b43d68b"
+  ]
+}

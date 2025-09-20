@@ -1,0 +1,129 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_pzJeGj": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_bxN9wY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Nielsen Readymade Frames",
+            "heading_size": "h1"
+          }
+        },
+        "text_fk4pi6": {
+          "type": "text",
+          "settings": {
+            "text": "A selection available in stock and ready to go",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_bxN9wY",
+        "text_fk4pi6"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/1614BDB9-C1F0-4551-A629-A55851C9E54E.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "rich_text_PKCjTw": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_CGmdqe": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_3qRG9h": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h2><em><strong>Readymade frames are available to order for collection in store only. Please note that not all frames are held in stock so please allow at least 7 working days for frames to arrive.</strong></em></h2>"
+          }
+        },
+        "button_hHVAF7": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_CGmdqe",
+        "text_3qRG9h",
+        "button_hHVAF7"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 24,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner_pzJeGj",
+    "rich_text_PKCjTw",
+    "banner",
+    "product-grid"
+  ]
+}

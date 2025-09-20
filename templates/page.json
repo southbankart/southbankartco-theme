@@ -1,0 +1,351 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_Fdi8WJ": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_Bez7fj": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Framing",
+            "heading_size": "h1"
+          }
+        },
+        "text_pb4fyb": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_6TGede": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Bez7fj",
+        "text_pb4fyb",
+        "buttons_6TGede"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/London_Fire_Vintage_Frame_Mockup1.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "collapsible_content_3jDMkh": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_yJW7pJ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long does it take to frame a picture?",
+            "icon": "question_mark",
+            "row_content": "<p>On average bespoke framing takes 2-3 weeks.  We do also have a good selection of readymade frames should you need something more quickly.  We recommend getting in touch if you do require something framed more urgently and will do our best to help.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_KVbQKV": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "I'm new to framing, how do I start the process?",
+            "icon": "question_mark",
+            "row_content": "<p>Not to worry, we are on hand to help. The first step is to visit us with your artwork. The best option is to book an appointment online, we do try to accommodate walk ins as well. Whether you have a poster or original painting we can recommend a few options from our selection of bespoke and readymade frames and we usually find there is something to suit most budgets.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_tmjWpx": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you have any budget framing options?",
+            "icon": "question_mark",
+            "row_content": "<p>We recommend looking at our range of readymade frames.  We can cut bespoke window mounts to fit and we find that this is an attractive and more economical option.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_8FEfpi": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you offer a framing delivery service?",
+            "icon": "question_mark",
+            "row_content": "<p>Unfortunately we do not have a delivery service for our framing.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_JaGXqj": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What type of materials do you use?",
+            "icon": "question_mark",
+            "row_content": "<p>We are conservation picture framers and use archival and acid free materials and tapes.  We keep a selection of conservation and museum standard mountboards to offer the best protection for your artwork.  We tend to to work with solid wood moulding but we also have ranges of aluminum, gold, silver and commercially finished mouldings.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_MJdnz8": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What type of glazing options do you have?",
+            "icon": "question_mark",
+            "row_content": "<ul><li>Standard glass</li><li>Anti-reflective glass</li><li>Glass with 92% and 99% UV protection</li><li>Acrylic glazing</li></ul><p></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_6Xe8CU": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you stretch canvas?",
+            "icon": "question_mark",
+            "row_content": "<p>Yes we do. A common reason for stretching canvas is often when a painting has been rolled for transportation. Our wooden canvas stretchers are bespoke made from solid hardwood.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_yJW7pJ",
+        "collapsible_row_KVbQKV",
+        "collapsible_row_tmjWpx",
+        "collapsible_row_8FEfpi",
+        "collapsible_row_JaGXqj",
+        "collapsible_row_MJdnz8",
+        "collapsible_row_6Xe8CU"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Framing FAQ's",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "multirow_7bUnpM": {
+      "type": "multirow",
+      "blocks": {
+        "row_8pFEQm": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/83E0FB90-9701-40E8-9D7B-E02E9F710736.jpg",
+            "caption": "Framing",
+            "heading": "Box frame with float mount",
+            "text": "<p>This is where the artwork is laid on top of a mountboard so all the edges are visible. To keep the glass away from the surface of the artwork we use fillets (spacers).  This method works well for etchings, and screen prints but is not suitable for all types of paper. </p><p>Negroni Painting by Frankie Thorp framed in a wooden frame in a painted finish with anti-reflective glass</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_fekRri": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/F4AAF863-E167-41A9-8063-74D6C9DB0DA1.jpg",
+            "caption": "Framing",
+            "heading": "Box Frame No Mount",
+            "text": "<p>The frame comes right to the edge of the artwork.  Fillets (spacers) keep the glass away from the paper.  This method can work well for prints where there is there is an even border.</p><p>Framed with a wooden frame in a painted finish with anti-reflective glass</p>",
+            "button_label": "View More",
+            "button_link": "shopify://pages/box-frame-no-mount"
+          }
+        },
+        "row_kwFHWj": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/CF435AB5-CC65-4864-ABEB-6EDF53F297CC.jpg",
+            "caption": "Framing",
+            "heading": "Frame with Window Mount",
+            "text": "<p>One of our most popular options, a window mount adds space around the artwork and acts as a barrier so the glass is not resting directly onto the surface of the picture. </p><p>Framed with a solid walnut frame with anti-reflective glass</p>",
+            "button_label": "View More",
+            "button_link": "shopify://pages/frame-with-window-mount"
+          }
+        },
+        "row_ntfUnj": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/C13CAAB7-DF04-4ECE-901B-4817622E8670.jpg",
+            "caption": "Framing Canvas",
+            "heading": "Canvas Tray Frames",
+            "text": "<p>A minimal and contemporary method of framing canvases.  A small gap is left around the canvas giving the effect of the canvas floating inside the frame.</p><p>Framed in our wooden tray frame in a painted finish.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_8pFEQm",
+        "row_fekRri",
+        "row_kwFHWj",
+        "row_ntfUnj"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_WAwWpM": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_gmp8EL": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_qjC8MR": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_XPdpLW": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_gmp8EL",
+        "text_qjC8MR",
+        "buttons_XPdpLW"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/B937BAC3-DA7C-422A-A268-F303AFD9B708.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "multirow_twN3g7": {
+      "type": "multirow",
+      "blocks": {
+        "row_r3C7JQ": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/23D33569-5D0A-4E87-9EAA-2E1BF16B97EE.jpg",
+            "caption": "Mounts",
+            "heading": "Mounting",
+            "text": "<p>We cut mounts for all purposes, whether you need just one or one hundred mounts we can easily accommodate your requirements.  We can even cut multiple windows if you have a collection of images you want to keep together.  We use a computer controlled mount cutter for excellent precision and quality.  All our boards are conservation or museum standard to ensure maximum protection for your artwork.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_XYdYJq": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/IMG_0917.jpg",
+            "caption": "Framing",
+            "heading": "Textile Framing",
+            "text": "",
+            "button_label": "View More",
+            "button_link": "shopify://pages/textile-framing"
+          }
+        },
+        "row_bpQWQ6": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/866AED92-B2C4-478E-89BC-E8F0EC9D19C5.jpg",
+            "caption": "Framing",
+            "heading": "Object Framing",
+            "text": "<p>Over the years we have framed a variety of objects.  Most require a box frame with fillets.</p><p> </p>",
+            "button_label": "View more",
+            "button_link": "shopify://pages/object-framing"
+          }
+        }
+      },
+      "block_order": [
+        "row_r3C7JQ",
+        "row_XYdYJq",
+        "row_bpQWQ6"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner_Fdi8WJ",
+    "collapsible_content_3jDMkh",
+    "main",
+    "multirow_7bUnpM",
+    "image_banner_WAwWpM",
+    "multirow_twN3g7"
+  ]
+}

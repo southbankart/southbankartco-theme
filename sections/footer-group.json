@@ -1,0 +1,71 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "brand_information_VjLGaN": {
+          "type": "brand_information",
+          "disabled": true,
+          "settings": {
+            "show_social": true
+          }
+        },
+        "text_Gdptpw": {
+          "type": "text",
+          "settings": {
+            "heading": "About us",
+            "subtext": "<p>We have been hand making frames and supplying quality artist materials to the local community and beyond for 23 years. </p>"
+          }
+        },
+        "link_list_yRmyHm": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Information",
+            "menu": "information-1"
+          }
+        },
+        "text_TeXDzQ": {
+          "type": "text",
+          "settings": {
+            "heading": "Contact  us",
+            "subtext": "<p>Tel: 0207 928 9722</p><p>Email: hello@southbankart.co.uk</p><p>Address: 21 London Road, London, SE1 6JX</p>"
+          }
+        }
+      },
+      "block_order": [
+        "brand_information_VjLGaN",
+        "text_Gdptpw",
+        "link_list_yRmyHm",
+        "text_TeXDzQ"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "newsletter_enable": false,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_policy": true,
+        "margin_top": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

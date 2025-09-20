@@ -1,776 +1,412 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
-    "color_header_bg": "#272c33",
-    "color_header_links": "#fff",
-    "color_body_bg": "#ffffff",
-    "color_content_bg": "#ffffff",
-    "color_body_headings": "#030303",
-    "color_body_text": "#272c33",
-    "color_button_bg": "#2e93d5",
-    "color_button_text": "#fff",
-    "color_footer_bg": "#030303",
-    "color_footer_text": "#fff",
-    "color_hero_text": "#fceb5b",
-    "color_hero_bg": "#f068c2",
-    "type_accent_family": "unica_one_n4",
-    "type_accent_spacing": true,
-    "type_accent_transform": true,
-    "type_base_family": "karla_n4",
-    "type_base_size": "17px",
-    "type_nav_size": "14px",
-    "type_nav_spacing": true,
-    "type_nav_transform": true,
-    "product_images_padding": true,
-    "product_vendor_enable": false,
-    "share_image": "",
-    "social_facebook_link": "https:\/\/www.facebook.com\/southbankartco",
-    "social_twitter_link": "https:\/\/twitter.com\/southbankartco",
-    "social_pinterest_link": "",
-    "social_instagram_link": "https:\/\/instagram.com\/southbankartco",
-    "social_tumblr_link": "",
-    "social_snapchat_link": "",
+    "logo": "shopify://shop_images/southbank-logo-sm-white.png",
+    "logo_width": 110,
+    "type_header_font": "merriweather_n4",
+    "heading_scale": 105,
+    "type_body_font": "karla_n4",
+    "body_scale": 100,
+    "page_width": 1600,
+    "spacing_sections": 0,
+    "spacing_grid_horizontal": 8,
+    "spacing_grid_vertical": 8,
+    "animations_reveal_on_scroll": true,
+    "animations_hover_elements": "none",
+    "buttons_border_thickness": 2,
+    "buttons_border_opacity": 100,
+    "buttons_radius": 0,
+    "buttons_shadow_opacity": 40,
+    "buttons_shadow_horizontal_offset": 0,
+    "buttons_shadow_vertical_offset": 4,
+    "buttons_shadow_blur": 5,
+    "variant_pills_border_thickness": 1,
+    "variant_pills_border_opacity": 55,
+    "variant_pills_radius": 40,
+    "variant_pills_shadow_opacity": 0,
+    "variant_pills_shadow_horizontal_offset": 0,
+    "variant_pills_shadow_vertical_offset": 4,
+    "variant_pills_shadow_blur": 5,
+    "inputs_border_thickness": 1,
+    "inputs_border_opacity": 55,
+    "inputs_radius": 0,
+    "inputs_shadow_opacity": 0,
+    "inputs_shadow_horizontal_offset": 0,
+    "inputs_shadow_vertical_offset": 4,
+    "inputs_shadow_blur": 5,
+    "card_style": "card",
+    "card_image_padding": 0,
+    "card_text_alignment": "left",
+    "card_color_scheme": "scheme-1",
+    "card_border_thickness": 0,
+    "card_border_opacity": 10,
+    "card_corner_radius": 0,
+    "card_shadow_opacity": 0,
+    "card_shadow_horizontal_offset": 0,
+    "card_shadow_vertical_offset": 4,
+    "card_shadow_blur": 5,
+    "collection_card_style": "standard",
+    "collection_card_image_padding": 0,
+    "collection_card_text_alignment": "left",
+    "collection_card_color_scheme": "scheme-2",
+    "collection_card_border_thickness": 0,
+    "collection_card_border_opacity": 10,
+    "collection_card_corner_radius": 0,
+    "collection_card_shadow_opacity": 0,
+    "collection_card_shadow_horizontal_offset": 0,
+    "collection_card_shadow_vertical_offset": 4,
+    "collection_card_shadow_blur": 5,
+    "blog_card_style": "standard",
+    "blog_card_image_padding": 0,
+    "blog_card_text_alignment": "left",
+    "blog_card_color_scheme": "scheme-2",
+    "blog_card_border_thickness": 0,
+    "blog_card_border_opacity": 10,
+    "blog_card_corner_radius": 0,
+    "blog_card_shadow_opacity": 0,
+    "blog_card_shadow_horizontal_offset": 0,
+    "blog_card_shadow_vertical_offset": 4,
+    "blog_card_shadow_blur": 5,
+    "text_boxes_border_thickness": 0,
+    "text_boxes_border_opacity": 10,
+    "text_boxes_radius": 0,
+    "text_boxes_shadow_opacity": 0,
+    "text_boxes_shadow_horizontal_offset": 0,
+    "text_boxes_shadow_vertical_offset": 4,
+    "text_boxes_shadow_blur": 5,
+    "media_border_thickness": 1,
+    "media_border_opacity": 5,
+    "media_radius": 0,
+    "media_shadow_opacity": 0,
+    "media_shadow_horizontal_offset": 0,
+    "media_shadow_vertical_offset": 4,
+    "media_shadow_blur": 5,
+    "popup_border_thickness": 1,
+    "popup_border_opacity": 10,
+    "popup_corner_radius": 0,
+    "popup_shadow_opacity": 5,
+    "popup_shadow_horizontal_offset": 0,
+    "popup_shadow_vertical_offset": 4,
+    "popup_shadow_blur": 5,
+    "drawer_border_thickness": 1,
+    "drawer_border_opacity": 10,
+    "drawer_shadow_opacity": 0,
+    "drawer_shadow_horizontal_offset": 0,
+    "drawer_shadow_vertical_offset": 4,
+    "drawer_shadow_blur": 5,
+    "badge_position": "bottom left",
+    "badge_corner_radius": 40,
+    "sale_badge_color_scheme": "scheme-5",
+    "sold_out_badge_color_scheme": "scheme-3",
+    "brand_headline": "About us",
+    "brand_description": "<p>We have been hand making frames and supplying quality artist materials to the local community and beyond for 23 years.</p>",
+    "brand_image_width": 100,
+    "social_facebook_link": "https://facebook.com/southbankartco",
+    "social_instagram_link": "http://instagram.com/southbankartco",
     "social_youtube_link": "",
+    "social_tiktok_link": "",
+    "social_twitter_link": "https://twitter.com/southbankartco",
+    "social_snapchat_link": "",
+    "social_pinterest_link": "",
+    "social_tumblr_link": "",
     "social_vimeo_link": "",
-    "share_facebook": true,
-    "share_twitter": true,
-    "share_pinterest": true,
-    "favicon": "shopify:\/\/shop_images\/AE504B08-2ACA-46A0-9FC5-CB8D7F9F2AA2.png",
-    "checkout_header_image": "",
-    "checkout_logo_image": "shopify:\/\/shop_images\/southbank_0aea30f6-09a6-46ab-a0eb-df1726b129e0.png",
-    "checkout_logo_position": "center",
-    "checkout_logo_size": "large",
-    "checkout_body_background_image": "",
-    "checkout_body_background_color": "#fff",
-    "checkout_input_background_color_mode": "white",
-    "checkout_sidebar_background_image": "",
-    "checkout_sidebar_background_color": "#fafafa",
-    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
-    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
-    "checkout_accent_color": "#2e93d5",
-    "checkout_button_color": "#134075",
-    "checkout_error_color": "#d46969",
-    "checkout_banner_background_color": "#fff",
-    "checkout_call_to_action_color": "#006eff",
-    "checkout_use_header_image": false,
-    "color_newsletter_input": "#1a1a1a",
+    "predictive_search_enabled": true,
+    "predictive_search_show_vendor": false,
+    "predictive_search_show_price": false,
+    "currency_code_enabled": true,
+    "cart_type": "notification",
+    "show_vendor": false,
+    "show_cart_note": false,
+    "cart_drawer_collection": "",
+    "cart_color_scheme": "scheme-1",
     "sections": {
-      "slideshow": {
-        "type": "slideshow",
-        "blocks": {
-          "placeholder-0": {
-            "type": "slide",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/8AFF3BD5-8524-4DDB-BD32-F88E9EE70DEF.jpg",
-              "image_position": "center center",
-              "title": "Custom Framing",
-              "button_label": "Click to book an appointment",
-              "button_link": "https:\/\/calendly.com\/thesouthbankartco"
-            }
-          },
-          "d251190b-fcc9-47b8-abdb-27ecbe931ff6": {
-            "type": "slide",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/20200925_Brass_Sport_2020_Collage_Insta_feb041b4-a7f6-4000-b31a-f5194ff4b6e8.jpg",
-              "image_position": "center center",
-              "title": "Kaweco Fountain Pens",
-              "button_label": "Shop the range",
-              "button_link": "shopify:\/\/collections\/fountain-pens"
-            }
-          },
-          "52e99611-c8cf-4a15-ae32-6b4baa233b64": {
-            "type": "slide",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/pastels_neocolor_1_box1.jpg",
-              "image_position": "center center",
-              "title": "water-soluble sketching",
-              "button_label": "Shop the range",
-              "button_link": "shopify:\/\/collections\/watercolour-pencils-and-pens"
-            }
-          },
-          "1587301910671": {
-            "type": "slide",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Cafe_on_the_Southbank_Mockup_Web.jpg",
-              "image_position": "center center",
-              "title": "Prints",
-              "button_label": "Shop the range",
-              "button_link": "shopify:\/\/collections\/prints"
-            }
-          }
-        },
-        "block_order": [
-          "placeholder-0",
-          "d251190b-fcc9-47b8-abdb-27ecbe931ff6",
-          "52e99611-c8cf-4a15-ae32-6b4baa233b64",
-          "1587301910671"
-        ],
+      "main-password-header": {
+        "type": "main-password-header",
         "settings": {
-          "hero_home_height": "small",
-          "hero_home_auto": true,
-          "hero_home_auto_speed": 5
+          "color_scheme": "scheme-1"
         }
       },
-      "footer": {
-        "type": "footer",
-        "blocks": {
-          "linklist": {
-            "type": "menu",
-            "settings": {
-              "link_list": "footer"
-            }
-          },
-          "social": {
-            "type": "social",
-            "settings": {
-              "title": "Follow us",
-              "align": "left"
-            }
-          },
-          "1587298352880": {
-            "type": "text",
-            "settings": {
-              "title": "Contact",
-              "text": "<p>0207 928 9722<\/p><p><a href=\"mailto:hello@southbankart.co.uk\" title=\"mailto:hello@southbankart.co.uk\">hello@southbankart.co.uk<\/a><\/p><p>21 London Road, London, SE1 6JX<\/p>"
-            }
-          }
-        },
-        "block_order": [
-          "linklist",
-          "social",
-          "1587298352880"
-        ],
+      "main-password-footer": {
+        "type": "main-password-footer",
         "settings": {
-          "show_payment_icons": true
-        }
-      },
-      "featured-collections": {
-        "type": "featured-collections",
-        "blocks": {
-          "featured-collections-1": {
-            "type": "collection",
-            "settings": {
-              "collection": "new-products"
-            }
-          },
-          "featured-collections-2": {
-            "type": "collection",
-            "disabled": true,
-            "settings": {
-              "collection": "best-selling-collection"
-            }
-          },
-          "57cc442a-0297-424c-9ad1-6b5b78f67216": {
-            "type": "collection",
-            "settings": {
-              "collection": "special-offers-1"
-            }
-          },
-          "9683541f-8d78-4eac-96c4-e8553a201911": {
-            "type": "collection",
-            "disabled": true,
-            "settings": {
-              "collection": "fabriano-1264-drawing-paper"
-            }
-          },
-          "98a4d7ce-9252-4023-a749-6d62138b3d53": {
-            "type": "collection",
-            "settings": {
-              "collection": "notebooks"
-            }
-          }
-        },
-        "block_order": [
-          "featured-collections-1",
-          "featured-collections-2",
-          "57cc442a-0297-424c-9ad1-6b5b78f67216",
-          "9683541f-8d78-4eac-96c4-e8553a201911",
-          "98a4d7ce-9252-4023-a749-6d62138b3d53"
-        ],
-        "settings": {
-          "stretch_collection_image": false
-        }
-      },
-      "image-content": {
-        "type": "image-content",
-        "blocks": {
-          "image-content-0": {
-            "type": "image_block",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Copy_of_Responsible_tree_planting.jpg"
-            }
-          },
-          "03f1054c-ebb0-4163-b0a4-5aabe90e2b7c": {
-            "type": "image_block",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/share_trees1000.png"
-            }
-          },
-          "image-content-1": {
-            "type": "text_block",
-            "settings": {
-              "title": "Ecologi",
-              "text": "<p>Wood and paper are a precious resource and we recognise the importance it plays in our industry. We have partnered up with Ecologi to support their responsible tree planting campaign and to try and give back and protect these resources for the future. To find out more about the work they do <a href=\"https:\/\/ecologi.com\/thesouthbankartcompany\" target=\"_blank\" title=\"https:\/\/ecologi.com\/thesouthbankartcompany\">click here<\/a><\/p>",
-              "align": "left"
-            }
-          },
-          "a8fce0b3-c4e5-4ee7-8893-65751708a042": {
-            "type": "image_block",
-            "disabled": true,
-            "settings": {
-            }
-          }
-        },
-        "block_order": [
-          "image-content-0",
-          "03f1054c-ebb0-4163-b0a4-5aabe90e2b7c",
-          "image-content-1",
-          "a8fce0b3-c4e5-4ee7-8893-65751708a042"
-        ],
-        "settings": {
-        }
-      },
-      "header": {
-        "type": "header",
-        "settings": {
-          "logo": "shopify:\/\/shop_images\/southbank_white.png",
-          "logo_max_width": "160",
-          "main_linklist": "main-menu",
-          "promo_bar_enable": true,
-          "promo_bar_text": "We're open Monday to Friday 9.30am to 5.30pm and Saturday 10am to 5pm.  Our last day before Christmas is 22nd December returning back in the New Year on 2nd January.",
-          "promo_bar_link": ""
-        }
-      },
-      "collection-filters": {
-        "type": "collection-filters",
-        "settings": {
-          "product_tags_enable": true,
-          "product_sorting_enable": true
-        }
-      },
-      "product-template": {
-        "type": "product-template",
-        "settings": {
-          "enable_ajax": true,
-          "stock_enable": true,
-          "enable_payment_button": false,
-          "social_sharing_products": true
-        }
-      },
-      "product-recommendations": {
-        "type": "product-recommendations",
-        "settings": {
-          "show_product_recommendations": true,
-          "heading": "You may also like"
-        }
-      },
-      "cart-template": {
-        "type": "cart-template",
-        "settings": {
-          "cart_notes_enable": false
-        }
-      },
-      "password-header": {
-        "type": "password-header",
-        "settings": {
-          "logo": "shopify:\/\/shop_images\/southbank_white.png",
-          "logo_max_width": "170",
-          "header": "Back soon..."
-        }
-      },
-      "password-content": {
-        "type": "password-content",
-        "settings": {
-          "newsletter_enable": false,
-          "newsletter_form_heading": "Be the first to know when we launch.",
-          "newsletter_form_subheading": "<p>Promotions, new products and sales. Directly to your inbox.<\/p>",
-          "newsletter_placeholder": "Email address"
-        }
-      },
-      "password-footer": {
-        "type": "password-footer",
-        "settings": {
-          "show_share_buttons": true,
-          "social_message": "Spread the word"
-        }
-      },
-      "list-collections-template": {
-        "type": "list-collections-template",
-        "settings": {
-          "display_type": "all",
-          "layout": "grid",
-          "sort": "alphabetical"
-        }
-      },
-      "featured-products-subsection": {
-        "type": "featured-products-subsection",
-        "settings": {
-          "collection": ""
-        }
-      },
-      "article-content": {
-        "type": "article-content",
-        "settings": {
-          "social_sharing_blog": true
-        }
-      },
-      "1586724004811": {
-        "type": "map",
-        "disabled": true,
-        "settings": {
-          "map_title": "Our Shop",
-          "address": "<p>21 London Road,<br\/>London,<br\/>SE1 6JX<\/p><p><em><strong>Mon - Fri, 9.30am - 5.30pm<\/strong><\/em><br\/><em><strong>Saturday 10am-5pm<\/strong><\/em><br\/><em><strong>Sunday & Bank Holidays Closed<\/strong><\/em><\/p><p><em>(Nearest tube stations Elephant & Castle 4mins and Waterloo 12mins)<\/em><\/p>",
-          "map_address": "21 London Road, London, SE1 6JX",
-          "button": "Directions",
-          "show_pin": true,
-          "api_key": "AIzaSyARcTxpqEOg0xSTtpGh6n_2JL84gWvbnQM",
-          "image": "shopify:\/\/shop_images\/File_29-06-2017_16_18_13_beda31a7-8d3f-4733-82de-191ddebe41aa.jpeg",
-          "position": "center center"
-        }
-      },
-      "1586781706591": {
-        "type": "quotes",
-        "blocks": {
-          "1586781706591-0": {
-            "type": "quote",
-            "settings": {
-              "quote": "<p>This is a hidden gem, you could pass this place a million times and not realize they did any anything other than posters and frames, but they stock a huge number of pens, stationary, craft supplies, speciality papers and cards and much more. Staff are friendly and knowledgeable.<\/p>",
-              "author": "Neil A. Evans"
-            }
-          },
-          "1586781706591-1": {
-            "type": "quote",
-            "settings": {
-              "quote": "<p>Lovely treasure trove shop, friendly and helpful staff.<\/p>",
-              "author": "Clare Douglas"
-            }
-          },
-          "1586782040440": {
-            "type": "quote",
-            "settings": {
-              "quote": "<p>Well picked selection for a smaller shop, with helpful and enthusiastic staff<\/p>",
-              "author": "Gavin Worth"
-            }
-          }
-        },
-        "block_order": [
-          "1586781706591-0",
-          "1586781706591-1",
-          "1586782040440"
-        ],
-        "settings": {
-          "title": "Testimonials"
-        }
-      },
-      "1587027814751": {
-        "type": "image-content",
-        "blocks": {
-          "1587027814751-1": {
-            "type": "text_block",
-            "settings": {
-              "title": "Bespoke Framing",
-              "text": "<p>We make handcrafted custom picture frames to order. Our on site SE1 workshop is fully equipped to make, finish, and fit a wide range of frames and canvas.  As <strong>conservation picture framers<\/strong>, we source and use premium quality materials and use specialist techniques to protect and enhance your artwork in the best way possible.<\/p><p><\/p><p>If you'd like to have something framed – start by <a href=\"https:\/\/calendly.com\/thesouthbankartco\" title=\"https:\/\/calendly.com\/thesouthbankartco\"><strong>booking a consultation<\/strong><\/a><strong> <\/strong>and we will be happy to help.  We have a variety of options available from budget friendly ready made frames all the way to fully gilt handmade frames.<\/p><p>To complete your picture frame, you can choose from our range of standard, and anti-reflective glazing options including museum glass with UV protection for those extra special pieces.<\/p><p><a href=\"\/pages\/picture-framing\" title=\"Picture Framing\"><strong>Learn more <\/strong><\/a><\/p><p><\/p><p><\/p><p><\/p><p><\/p>",
-              "align": "left"
-            }
-          },
-          "220f2401-bcd1-4a62-9236-3f4b8cc28372": {
-            "type": "image_block",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Angie_Lewin_Frame_Square_3f8e47d7-508b-4a6f-9ff4-ad6ac9a6a8b7.jpg"
-            }
-          }
-        },
-        "block_order": [
-          "1587027814751-1",
-          "220f2401-bcd1-4a62-9236-3f4b8cc28372"
-        ],
-        "settings": {
-        }
-      },
-      "1587299049265": {
-        "type": "rich-text",
-        "disabled": true,
-        "settings": {
-          "home_page_full_width": false,
-          "section_title": "Bespoke Framing",
-          "text": "<p>We make <strong>handcrafted custom picture frames to order<\/strong>. Our on site workshop is fully equipped to make, finish, and fit any specification of frame or canvas.<\/p><p><\/p><p>If you&#x27;d like to have something framed – start by dropping in for a consultation. There&#x27;s <strong>no appointment necessary<\/strong> but you should allow<strong> 30 mins<\/strong>.<\/p><p><\/p><p>Your completed frame is typically ready in around <strong>2 weeks<\/strong>.<\/p>",
-          "text_size": "medium"
-        }
-      },
-      "1587301229674": {
-        "type": "rich-text",
-        "disabled": true,
-        "settings": {
-          "home_page_full_width": false,
-          "section_title": "Service Update",
-          "text": "<p>We realise that many artists rely on us as to support their creative and artistic pursuits, and these offer a wonder therapy for health and well being at a time when we all desperately need it. We are not able to open our doors to the public, however, <strong>today we will begin to offer local deliveries as well as standard UK delivery<\/strong> – of selected stock.<\/p><p><\/p><p>We’ll be adding products to the site over the coming days and weeks. We’ll also be completing <strong>contactless deliveries<\/strong> either personally or using a range of courier services. Please bear with us as we ramp up during this time.<\/p><p><\/p><p>Unfortunately it is necessary to continue to suspend our bespoke framing services during this time. We will update customers once we are able to resume.<\/p>",
-          "text_size": "medium"
-        }
-      },
-      "1587396103234": {
-        "type": "instafeed",
-        "settings": {
-          "heading_font": "helvetica_n4",
-          "heading_size": 20,
-          "feed_width": 100,
-          "html_area": "<!-- -->"
-        }
-      },
-      "1587458918727": {
-        "type": "featured-content",
-        "disabled": true,
-        "settings": {
-          "title": "COVID-19 update",
-          "subtext": "We're operating a reduced service. Find out more >",
-          "link": "shopify:\/\/pages\/covid-19",
-          "image": "shopify:\/\/shop_images\/art-studio-drawer.jpg",
-          "image_align": "bottom center"
-        }
-      },
-      "1597404617006": {
-        "type": "featured-products",
-        "settings": {
-          "collection": "christmas-wrapping",
-          "rows": 1
-        }
-      },
-      "1598532702299": {
-        "type": "featured-products",
-        "settings": {
-          "collection": "gifts-under-20",
-          "rows": 1
-        }
-      },
-      "1600791841871": {
-        "type": "featured-products",
-        "settings": {
-          "collection": "painting-sets",
-          "rows": 1
-        }
-      },
-      "1644234701df659c95": {
-        "type": "image-content",
-        "blocks": {
-          "1644234701df659c95-1": {
-            "type": "text_block",
-            "settings": {
-              "title": "Fine Art Trade Guild",
-              "text": "<p>We are members of the Fine Art Trade Guild.  An organisation that strives to promote excellence within the picture framing industry. The guild standards are developed for the guidance of the professional picture framing trade and to enable consumers to make informed choices. The Guild facilitates the pooling of best practice and knowledge from throughout the picture framing industry. The standards are developed through proven facts, evidence based, using accepted UK accredited test procedures and their equivalent, but giving weight also to established framing practice and experience of products that have proven to stand the test of time. <\/p>",
-              "align": "left"
-            }
-          },
-          "1644234701df659c95-0": {
-            "type": "image_block",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/FATG_Enhanced_Logo.jpg"
-            }
-          }
-        },
-        "block_order": [
-          "1644234701df659c95-1",
-          "1644234701df659c95-0"
-        ],
-        "settings": {
-        }
-      },
-      "164459850556969c1f": {
-        "type": "featured-products",
-        "settings": {
-          "collection": "gift-for-kids",
-          "rows": 1
-        }
-      },
-      "1649849411b1c728ce": {
-        "type": "image-content",
-        "blocks": {
-          "1649849411b1c728ce-0": {
-            "type": "image_block",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Map.png"
-            }
-          },
-          "1649849411b1c728ce-1": {
-            "type": "text_block",
-            "settings": {
-              "title": "Our Shop",
-              "text": "<p>21 London Road,<br\/>London,<br\/>SE1 6JX<\/p><p><em><strong>Mon - Fri, 9.30am - 5.30pm<\/strong><\/em><br\/><em><strong>Saturday 10am-5pm<\/strong><\/em><br\/><em><strong>Sunday & Bank Holidays Closed<\/strong><\/em><\/p><p><em>(Nearest tube stations Elephant & Castle 4mins and Waterloo 12mins)<\/em><\/p>",
-              "align": "left"
-            }
-          }
-        },
-        "block_order": [
-          "1649849411b1c728ce-0",
-          "1649849411b1c728ce-1"
-        ],
-        "disabled": true,
-        "settings": {
-        }
-      },
-      "8dedd015-d04d-4884-8e31-92f9e4127a52": {
-        "type": "brand-list",
-        "blocks": {
-          "8dedd015-d04d-4884-8e31-92f9e4127a52-1685785462a92b7415-0": {
-            "type": "logo",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/LW_logo_LW_employer_only.png"
-            }
-          },
-          "8dedd015-d04d-4884-8e31-92f9e4127a52-1685785462a92b7415-1": {
-            "type": "logo",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Ecologi_Logo_Colour.png"
-            }
-          },
-          "8dedd015-d04d-4884-8e31-92f9e4127a52-1685785462a92b7415-2": {
-            "type": "logo",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Guild_colour_vector_logo_large_e8e4dbb1-f24b-4c49-8a57-c92f7f6dd94f.png"
-            }
-          }
-        },
-        "block_order": [
-          "8dedd015-d04d-4884-8e31-92f9e4127a52-1685785462a92b7415-0",
-          "8dedd015-d04d-4884-8e31-92f9e4127a52-1685785462a92b7415-1",
-          "8dedd015-d04d-4884-8e31-92f9e4127a52-1685785462a92b7415-2"
-        ],
-        "settings": {
-          "title": "We support"
-        }
-      },
-      "b613ea85-6c29-4e41-aceb-dcb076a60113": {
-        "type": "image-content",
-        "blocks": {
-          "b613ea85-6c29-4e41-aceb-dcb076a60113-image_block-1": {
-            "type": "image_block",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/christmas-lights.jpg"
-            }
-          },
-          "b613ea85-6c29-4e41-aceb-dcb076a60113-text_block-1": {
-            "type": "text_block",
-            "settings": {
-              "title": "Christmas Opening Hours",
-              "text": "<p>Please note that our last day before Christmas is <strong>Friday 22nd December<\/strong>. We will be closed over Christmas and New Year reopening on <strong>2nd January<\/strong><\/p>",
-              "align": "left"
-            }
-          }
-        },
-        "block_order": [
-          "b613ea85-6c29-4e41-aceb-dcb076a60113-image_block-1",
-          "b613ea85-6c29-4e41-aceb-dcb076a60113-text_block-1"
-        ],
-        "settings": {
+          "color_scheme": "scheme-1"
         }
       }
     },
-    "content_for_index": [
-      "slideshow",
-      "1587301229674",
-      "1587027814751",
-      "featured-collections",
-      "1598532702299",
-      "1597404617006",
-      "164459850556969c1f",
-      "1600791841871",
-      "1649849411b1c728ce",
-      "b613ea85-6c29-4e41-aceb-dcb076a60113",
-      "1586781706591",
-      "1587458918727",
-      "1586724004811",
-      "image-content",
-      "1587299049265",
-      "1587396103234",
-      "1644234701df659c95",
-      "8dedd015-d04d-4884-8e31-92f9e4127a52"
-    ]
+    "content_for_index": [],
+    "blocks": {
+      "4981902369724952902": {
+        "type": "shopify://apps/variant-option-product-options/blocks/embed-block/430cbd7b-bd20-4c16-ba41-db6f4c645164",
+        "disabled": false,
+        "settings": {}
+      },
+      "5294968793578418440": {
+        "type": "shopify://apps/king-product-options-variant/blocks/app-embed/ce104259-52b1-4720-9ecf-76b34cae0401",
+        "disabled": false,
+        "settings": {}
+      },
+      "14060646107696862457": {
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      }
+    },
+    "color_schemes": {
+      "scheme-1": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#121212",
+          "button": "#3397b4",
+          "button_label": "#121212",
+          "secondary_button_label": "#121212",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-2": {
+        "settings": {
+          "background": "#f5f5f5",
+          "background_gradient": "",
+          "text": "#121212",
+          "button": "#272c33",
+          "button_label": "#f5f5f5",
+          "secondary_button_label": "#121212",
+          "shadow": "#421212"
+        }
+      },
+      "scheme-3": {
+        "settings": {
+          "background": "#272c33",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#3397b4",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#ffffff",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-4": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#ffffff",
+          "button_label": "#121212",
+          "secondary_button_label": "#ffffff",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-5": {
+        "settings": {
+          "background": "#3397b4",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#ffffff",
+          "button_label": "#3397b4",
+          "secondary_button_label": "#ffffff",
+          "shadow": "#121212"
+        }
+      }
+    }
   },
   "presets": {
-    "Snowboards": {
-      "checkout_accent_color": "#006eff",
-      "checkout_banner_background_color": "#fff",
-      "checkout_button_color": "#006eff",
-      "checkout_call_to_action_color": "#006eff",
-      "checkout_use_header_image": false,
-      "color_body_bg": "#f7f7f7",
-      "color_body_headings": "#030303",
-      "color_body_text": "#666",
-      "color_button_bg": "#006eff",
-      "color_button_text": "#fff",
-      "color_content_bg": "#fff",
-      "color_footer_bg": "#030303",
-      "color_footer_text": "#fff",
-      "color_header_bg": "#030303",
-      "color_header_links": "#fff",
-      "color_hero_bg": "#006eff",
-      "color_hero_text": "#fff",
-      "color_newsletter_input": "#1a1a1a",
-      "type_accent_family": "unica_one_n4",
-      "type_accent_spacing": true,
-      "type_accent_transform": true,
-      "type_base_family": "karla_n4",
-      "type_base_size": "16px",
-      "type_nav_size": "14px",
-      "type_nav_spacing": true,
-      "type_nav_transform": true,
-      "sections": {
-        "slideshow": {
-          "type": "slideshow",
-          "blocks": {
-            "placeholder-0": {
-              "type": "slide",
-              "settings": {
-              }
-            },
-            "placeholder-1": {
-              "type": "slide",
-              "settings": {
-              }
-            }
-          },
-          "block_order": [
-            "placeholder-0",
-            "placeholder-1"
-          ],
+    "Default": {
+      "logo_width": 90,
+      "color_schemes": {
+        "scheme-1": {
           "settings": {
+            "background": "#FFFFFF",
+            "background_gradient": "",
+            "text": "#121212",
+            "button": "#121212",
+            "button_label": "#FFFFFF",
+            "secondary_button_label": "#121212",
+            "shadow": "#121212"
           }
         },
-        "footer": {
-          "type": "footer",
-          "blocks": {
-            "linklist": {
-              "type": "menu",
-              "settings": {
-              }
-            },
-            "social": {
-              "type": "social",
-              "settings": {
-              }
-            }
-          },
-          "block_order": [
-            "linklist",
-            "social"
-          ],
+        "scheme-2": {
           "settings": {
+            "background": "#F3F3F3",
+            "background_gradient": "",
+            "text": "#121212",
+            "button": "#121212",
+            "button_label": "#F3F3F3",
+            "secondary_button_label": "#121212",
+            "shadow": "#121212"
           }
         },
-        "featured-collections": {
-          "type": "featured-collections",
-          "blocks": {
-            "featured-collections-0": {
-              "type": "collection",
-              "settings": {
-              }
-            },
-            "featured-collections-1": {
-              "type": "collection",
-              "settings": {
-              }
-            },
-            "featured-collections-2": {
-              "type": "collection",
-              "settings": {
-              }
-            }
-          },
-          "block_order": [
-            "featured-collections-0",
-            "featured-collections-1",
-            "featured-collections-2"
-          ],
+        "scheme-3": {
           "settings": {
+            "background": "#242833",
+            "background_gradient": "",
+            "text": "#FFFFFF",
+            "button": "#FFFFFF",
+            "button_label": "#000000",
+            "secondary_button_label": "#FFFFFF",
+            "shadow": "#121212"
           }
         },
-        "featured-products": {
-          "type": "featured-products",
+        "scheme-4": {
           "settings": {
-            "collection": "frontpage"
+            "background": "#121212",
+            "background_gradient": "",
+            "text": "#FFFFFF",
+            "button": "#FFFFFF",
+            "button_label": "#121212",
+            "secondary_button_label": "#FFFFFF",
+            "shadow": "#121212"
           }
         },
-        "image-content": {
-          "type": "image-content",
-          "blocks": {
-            "image-content-0": {
-              "type": "image_block",
-              "settings": {
-              }
-            },
-            "image-content-1": {
-              "type": "text_block",
-              "settings": {
-              }
-            }
-          },
-          "block_order": [
-            "image-content-0",
-            "image-content-1"
-          ],
+        "scheme-5": {
           "settings": {
+            "background": "#334FB4",
+            "background_gradient": "",
+            "text": "#FFFFFF",
+            "button": "#FFFFFF",
+            "button_label": "#334FB4",
+            "secondary_button_label": "#FFFFFF",
+            "shadow": "#121212"
           }
         }
       },
-      "content_for_index": [
-        "slideshow",
-        "featured-collections",
-        "featured-products",
-        "image-content"
-      ]
-    },
-    "Outdoors": {
-      "checkout_accent_color": "#f4743c",
-      "checkout_banner_background_color": "#fff",
-      "checkout_button_color": "#f4743c",
-      "checkout_call_to_action_color": "#f4743c",
-      "checkout_use_header_image": false,
-      "color_body_bg": "#f7f7f7",
-      "color_body_headings": "#1a1a1a",
-      "color_body_text": "#666",
-      "color_button_bg": "#c04f1d",
-      "color_button_text": "#fff",
-      "color_content_bg": "#ffffff",
-      "color_footer_bg": "#213236",
-      "color_footer_text": "#fff",
-      "color_header_bg": "#213236",
-      "color_header_links": "#ffffff",
-      "color_hero_bg": "#f4743c",
-      "color_hero_text": "#fff",
-      "color_newsletter_input": "#425154",
-      "type_accent_family": "lora_n7",
-      "type_accent_spacing": false,
-      "type_accent_transform": false,
-      "type_base_family": "roboto_n4",
-      "type_base_size": "14px",
-      "type_nav_size": "15px",
-      "type_nav_spacing": false,
-      "type_nav_transform": false
-    },
-    "Boxing": {
-      "checkout_accent_color": "#d8232f",
-      "checkout_banner_background_color": "#fff",
-      "checkout_button_color": "#d8232f",
-      "checkout_call_to_action_color": "#d8232f",
-      "checkout_use_header_image": false,
-      "color_body_bg": "#f0f0f0",
-      "color_body_headings": "#222222",
-      "color_body_text": "#666",
-      "color_button_bg": "#d8232f",
-      "color_button_text": "#fff",
-      "color_content_bg": "#ffffff",
-      "color_footer_bg": "#222222",
-      "color_footer_text": "#ffffff",
-      "color_header_bg": "#222222",
-      "color_header_links": "#ffffff",
-      "color_hero_bg": "#d8232f",
-      "color_hero_text": "#fff",
-      "color_newsletter_input": "#303030",
-      "type_accent_family": "open_sans_condensed_n7",
-      "type_accent_spacing": false,
-      "type_accent_transform": true,
-      "type_base_family": "source_sans_pro_n4",
-      "type_base_size": "17px",
-      "type_nav_size": "14px",
-      "type_nav_spacing": true,
-      "type_nav_transform": true
+      "type_header_font": "assistant_n4",
+      "heading_scale": 100,
+      "type_body_font": "assistant_n4",
+      "body_scale": 100,
+      "page_width": 1200,
+      "spacing_sections": 0,
+      "spacing_grid_horizontal": 8,
+      "spacing_grid_vertical": 8,
+      "animations_reveal_on_scroll": true,
+      "animations_hover_elements": "none",
+      "buttons_border_thickness": 1,
+      "buttons_border_opacity": 100,
+      "buttons_radius": 0,
+      "buttons_shadow_opacity": 0,
+      "buttons_shadow_horizontal_offset": 0,
+      "buttons_shadow_vertical_offset": 4,
+      "buttons_shadow_blur": 5,
+      "variant_pills_border_thickness": 1,
+      "variant_pills_border_opacity": 55,
+      "variant_pills_radius": 40,
+      "variant_pills_shadow_opacity": 0,
+      "variant_pills_shadow_horizontal_offset": 0,
+      "variant_pills_shadow_vertical_offset": 4,
+      "variant_pills_shadow_blur": 5,
+      "inputs_border_thickness": 1,
+      "inputs_border_opacity": 55,
+      "inputs_radius": 0,
+      "inputs_shadow_opacity": 0,
+      "inputs_shadow_horizontal_offset": 0,
+      "inputs_shadow_vertical_offset": 4,
+      "inputs_shadow_blur": 5,
+      "card_style": "standard",
+      "card_image_padding": 0,
+      "card_text_alignment": "left",
+      "card_color_scheme": "scheme-2",
+      "card_border_thickness": 0,
+      "card_border_opacity": 10,
+      "card_corner_radius": 0,
+      "card_shadow_opacity": 0,
+      "card_shadow_horizontal_offset": 0,
+      "card_shadow_vertical_offset": 4,
+      "card_shadow_blur": 5,
+      "collection_card_style": "standard",
+      "collection_card_image_padding": 0,
+      "collection_card_text_alignment": "left",
+      "collection_card_color_scheme": "scheme-2",
+      "collection_card_border_thickness": 0,
+      "collection_card_border_opacity": 10,
+      "collection_card_corner_radius": 0,
+      "collection_card_shadow_opacity": 0,
+      "collection_card_shadow_horizontal_offset": 0,
+      "collection_card_shadow_vertical_offset": 4,
+      "collection_card_shadow_blur": 5,
+      "blog_card_style": "standard",
+      "blog_card_image_padding": 0,
+      "blog_card_text_alignment": "left",
+      "blog_card_color_scheme": "scheme-2",
+      "blog_card_border_thickness": 0,
+      "blog_card_border_opacity": 10,
+      "blog_card_corner_radius": 0,
+      "blog_card_shadow_opacity": 0,
+      "blog_card_shadow_horizontal_offset": 0,
+      "blog_card_shadow_vertical_offset": 4,
+      "blog_card_shadow_blur": 5,
+      "text_boxes_border_thickness": 0,
+      "text_boxes_border_opacity": 10,
+      "text_boxes_radius": 0,
+      "text_boxes_shadow_opacity": 0,
+      "text_boxes_shadow_horizontal_offset": 0,
+      "text_boxes_shadow_vertical_offset": 4,
+      "text_boxes_shadow_blur": 5,
+      "media_border_thickness": 1,
+      "media_border_opacity": 5,
+      "media_radius": 0,
+      "media_shadow_opacity": 0,
+      "media_shadow_horizontal_offset": 0,
+      "media_shadow_vertical_offset": 4,
+      "media_shadow_blur": 5,
+      "popup_border_thickness": 1,
+      "popup_border_opacity": 10,
+      "popup_corner_radius": 0,
+      "popup_shadow_opacity": 5,
+      "popup_shadow_horizontal_offset": 0,
+      "popup_shadow_vertical_offset": 4,
+      "popup_shadow_blur": 5,
+      "drawer_border_thickness": 1,
+      "drawer_border_opacity": 10,
+      "drawer_shadow_opacity": 0,
+      "drawer_shadow_horizontal_offset": 0,
+      "drawer_shadow_vertical_offset": 4,
+      "drawer_shadow_blur": 5,
+      "badge_position": "bottom left",
+      "badge_corner_radius": 40,
+      "sale_badge_color_scheme": "scheme-4",
+      "sold_out_badge_color_scheme": "scheme-3",
+      "brand_headline": "",
+      "brand_description": "<p></p>",
+      "brand_image_width": 100,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tiktok_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "predictive_search_enabled": true,
+      "predictive_search_show_vendor": false,
+      "predictive_search_show_price": false,
+      "currency_code_enabled": true,
+      "cart_type": "notification",
+      "show_vendor": false,
+      "show_cart_note": false,
+      "cart_drawer_collection": "",
+      "cart_color_scheme": "scheme-1",
+      "sections": {
+        "main-password-header": {
+          "type": "main-password-header",
+          "settings": {
+            "color_scheme": "scheme-1"
+          }
+        },
+        "main-password-footer": {
+          "type": "main-password-footer",
+          "settings": {
+            "color_scheme": "scheme-1"
+          }
+        }
+      }
     }
   }
 }
