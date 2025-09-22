@@ -1,0 +1,27 @@
+{
+  "name": "shopify-variants-export-import",
+  "version": "1.0.0",
+  "description": "Export and import Shopify product variants with metafields",
+  "main": "export-variants.js",
+  "scripts": {
+    "export": "node export-variants.js",
+    "import": "node import-variants.js",
+    "export:help": "node export-variants.js --help",
+    "import:help": "node import-variants.js --help"
+  },
+  "keywords": [
+    "shopify",
+    "variants",
+    "metafields",
+    "export",
+    "import",
+    "csv"
+  ],
+  "author": "Southbank Art",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
