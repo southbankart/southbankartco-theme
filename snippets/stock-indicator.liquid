@@ -42,7 +42,7 @@
     {%- if variant.inventory_policy == 'continue' -%}
       {%- comment -%} Out of stock but continue selling {%- endcomment -%}
       {% render 'stock-icon', status: 'in-stock', size: size %}
-      Ready in 2-3 Days
+      Ready in 5 Days
     {%- else -%}
       {%- comment -%} Out of stock {%- endcomment -%}
       {% render 'stock-icon', status: 'out-of-stock', size: size %}
