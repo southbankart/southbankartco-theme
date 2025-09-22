@@ -42,7 +42,7 @@
               data-inventory="{{ variant.inventory_quantity }}"
               {% unless variant.available %}disabled{% endunless %}
             >
-              <div class="nielsen-size-name">{{ variant.options.first }}</div>
+              <div class="nielsen-size-name">{{ variant.metafields.custom.variant_label | default: variant.options.first }}</div>
               {%- if variant.metafields.custom.nielsen_variant_subtitle -%}
                 <div class="nielsen-size-subtitle">{{ variant.metafields.custom.nielsen_variant_subtitle }}</div>
               {%- endif -%}
