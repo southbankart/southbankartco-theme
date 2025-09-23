@@ -1,0 +1,155 @@
+/* Rich Variant Picker Styles */
+.rich-variant-selects {
+  display: block;
+}
+
+.rich-variant-fieldset {
+  margin-bottom: 2rem;
+}
+
+.rich-variant-label {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: rgb(var(--color-foreground));
+  margin-bottom: 1.2rem;
+  display: block;
+}
+
+.rich-variant-dropdown {
+  margin-bottom: 2rem;
+}
+
+/* Rich Button Styles */
+.product-form__input--pill.rich-variant-fieldset {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.rich-radio-input {
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  position: absolute;
+  height: 1px;
+  width: 1px;
+}
+
+.rich-variant-fieldset .rich-variant-btn {
+  border: var(--variant-pills-border-width) solid
+    rgba(var(--color-foreground), var(--variant-pills-border-opacity));
+  background: rgb(var(--color-background));
+  border-radius: 1rem!important;
+  padding: 1.2rem 1rem !important;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left !important;
+  position: relative;
+  font-family: inherit;
+  display: block !important;
+  width: 100%;
+  margin: 0 !important;
+  font-size: inherit !important;
+  letter-spacing: normal !important;
+  line-height: normal !important;
+}
+
+.rich-variant-fieldset .rich-variant-btn:hover:not(.rich-variant-btn--disabled) {
+  border-color: rgb(var(--color-link));
+}
+
+.rich-variant-fieldset .rich-radio-input:checked + .rich-variant-btn {
+  border-color: rgb(var(--color-link));
+  background: rgba(var(--color-foreground));
+  color: rgb(var(--color-background));
+}
+
+.rich-variant-fieldset .rich-radio-input:checked + .rich-variant-btn .rich-variant-price {
+  color: rgb(var(--color-background));
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.rich-variant-fieldset .rich-radio-input:checked + .rich-variant-btn .rich-variant-stock {
+  color: rgb(var(--color-background));
+}
+
+.rich-variant-fieldset .rich-radio-input:checked + .rich-variant-btn .rich-variant-name {
+  color: rgb(var(--color-background));
+}
+
+.rich-variant-fieldset .rich-radio-input:checked + .rich-variant-btn .stock-indicator {
+  color: rgb(var(--color-background));
+}
+
+.rich-variant-fieldset .rich-radio-input:disabled + .rich-variant-btn,
+.rich-variant-fieldset .rich-variant-btn--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  border-color: rgba(var(--color-foreground), 0.1);
+  color: rgba(var(--color-foreground), 0.6);
+}
+
+.rich-variant-fieldset .rich-variant-name {
+  font-size: 1.6rem;
+  color: rgb(var(--color-foreground));
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+}
+
+.rich-variant-fieldset .rich-variant-pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rich-variant-fieldset .rich-variant-price {
+  font-size: 1.4rem;
+  color: rgb(var(--color-link), 0.9);
+  font-weight: 600;
+}
+
+.rich-variant-fieldset .rich-variant-stock {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.rich-variant-fieldset .stock-indicator {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.rich-variant-fieldset .stock-indicator--available {
+  color: #28a745;
+}
+
+.rich-variant-fieldset .stock-indicator--unavailable {
+  color: #dc3545;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .product-form__input--pill.rich-variant-fieldset {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Focus styles */
+.rich-variant-fieldset .rich-radio-input:focus-visible + .rich-variant-btn {
+  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),
+    0 0 0 0.5rem rgba(var(--color-foreground), 0.55);
+}
+
+/* Fallback for older browsers */
+.rich-variant-fieldset .rich-radio-input.focused + .rich-variant-btn {
+  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),
+    0 0 0 0.5rem rgba(var(--color-foreground), 0.55);
+}
+
+/* No outline when focus-visible is available in the browser */
+.no-js .rich-variant-fieldset .rich-radio-input:focus:not(:focus-visible) + .rich-variant-btn {
+  box-shadow: none;
+}
