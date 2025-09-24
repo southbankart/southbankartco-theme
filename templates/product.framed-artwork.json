@@ -28,6 +28,10 @@
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
         },
+        "artist_signature": {
+          "type": "artist_signature",
+          "settings": {}
+        },
         "description": {
           "type": "description",
           "settings": {}
@@ -88,13 +92,37 @@
             "share_label": "Share"
           }
         },
-        "collapsible_tab_aPrEQy": {
-          "type": "collapsible_tab",
-          "disabled": true,
+        "artist_information": {
+          "type": "artist_information",
           "settings": {
-            "heading": "Why we like it",
+            "heading": "Artist & Print Details",
+            "icon": "star"
+          }
+        },
+        "quality_guarantee": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Quality & Guarantee",
+            "icon": "lock",
+            "content": "<p><strong>Print Quality:</strong> Fine art Giclée prints with archival inks<br><strong>Paper Quality:</strong> High-quality paper for longevity<br><strong>Color Accuracy:</strong> Professionally calibrated printing<br><strong>Return Policy:</strong> Please check our return policy for details<br><strong>Framing:</strong> Hand-finished by skilled craftspeople</p>",
+            "page": ""
+          }
+        },
+        "shipping_delivery": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping & Delivery",
+            "icon": "truck",
+            "content": "<p><strong>Collection:</strong> Available at our London studio<br><strong>Standard Delivery:</strong> Please check shipping options at checkout<br><strong>Express Delivery:</strong> Available for faster delivery<br><strong>Framed Items:</strong> Special protective packaging<br><strong>International:</strong> Contact us for shipping options</p>",
+            "page": ""
+          }
+        },
+        "care_instructions": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Care & Display",
             "icon": "heart",
-            "content": "",
+            "content": "<p><strong>Display:</strong> Keep away from direct sunlight<br><strong>Framed:</strong> Dust frame gently with soft cloth<br><strong>Unframed:</strong> Store flat in protective sleeve<br><strong>Handling:</strong> Support from underneath when moving<br><strong>Care:</strong> Proper care helps maintain print quality</p>",
             "page": ""
           }
         }
@@ -103,16 +131,17 @@
         "vendor",
         "title",
         "judge_me_reviews_preview_badge_FaKiHw",
+        "artist_signature",
         "description",
-        "price",
-        "inventory_WWPTTr",
-        "collapsible_tab_Xr9DJN",
-        "collapsible_tab_4gpLpY",
         "rich_picker_6HQcry",
         "quantity_selector",
+        "price",
         "buy_buttons",
         "share",
-        "collapsible_tab_aPrEQy"
+        "artist_information",
+        "quality_guarantee",
+        "shipping_delivery",
+        "care_instructions"
       ],
       "settings": {
         "enable_sticky_info": true,

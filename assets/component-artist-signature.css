@@ -1,0 +1,67 @@
+/* Artist Signature Styles */
+.artist-signature {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 1.2rem 0 1.2rem 0;
+  padding: 0.6rem 0 0;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.artist-signature:hover {
+  opacity: 0.8;
+}
+
+.artist-signature-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(var(--color-foreground), 0.1);
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.artist-signature:hover .artist-signature-avatar {
+  filter: grayscale(0%);
+  border-color: rgba(var(--color-foreground), 0.2);
+}
+
+.artist-signature-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.artist-signature-name {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: rgb(var(--color-foreground));
+  font-style: italic;
+}
+
+.artist-signature-title {
+  font-size: 1.3rem;
+  color: rgba(var(--color-foreground), 0.7);
+  margin: 0;
+  font-style: italic;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .artist-signature {
+    gap: 0.6rem;
+    margin: 1rem 0 1.2rem 0;
+    padding: 0.5rem 0;
+  }
+
+  .artist-signature-avatar {
+    width: 35px;
+    height: 35px;
+  }
+
+  .artist-signature-name {
+    font-size: 1.3rem;
+  }
+}

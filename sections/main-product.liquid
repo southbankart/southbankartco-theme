@@ -16,6 +16,27 @@
     {{ 'component-general-variant-picker.css' | asset_url | stylesheet_tag }}
     {{ 'component-rich-variant-picker.css' | asset_url | stylesheet_tag }}
   {% endunless %}
+  {{ 'component-artist-information.css' | asset_url | stylesheet_tag }}
+  {{ 'component-artist-profile-card.css' | asset_url | stylesheet_tag }}
+  {{ 'component-artist-signature.css' | asset_url | stylesheet_tag }}
+  
+  <script>
+    function openArtistInfo() {
+      // Find the artist information collapsible section
+      const artistSection = document.querySelector('details[data-artist-info]');
+      if (artistSection) {
+        // Open the details element
+        artistSection.open = true;
+        
+        // Scroll to the section with smooth behavior
+        artistSection.scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'start',
+          inline: 'nearest'
+        });
+      }
+    }
+  </script>
   {%- if product.quantity_price_breaks_configured? -%}
     {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
   {%- endif -%}
@@ -188,6 +209,24 @@
                     {%- endif -%}
                   {%- endif -%}
                 </p>
+              {%- when 'artist_signature' -%}
+                {%- liquid
+                  assign artist = product.metafields.custom.artist.value
+                -%}
+                {%- if artist and artist.name and artist.profile_image -%}
+                  <div class="artist-signature" {{ block.shopify_attributes }} onclick="openArtistInfo()">
+                    <img 
+                      src="{{ artist.profile_image | image_url: width: 50 }}" 
+                      alt="{{ artist.name }} profile image"
+                      class="artist-signature-avatar"
+                      loading="lazy"
+                    >
+                    <div class="artist-signature-content">
+                      <span class="artist-signature-name">{{ artist.name }}</span>
+                      <span class="artist-signature-title">Artist</span>
+                    </div>
+                  </div>
+                {%- endif -%}
               {%- when 'description' -%}
                 {%- if product.description != blank -%}
                   <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
@@ -221,6 +260,35 @@
                     <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
                       {{ block.settings.content }}
                       {{ block.settings.page.content }}
+                    </div>
+                  </details>
+                </div>
+              {%- when 'artist_profile_card' -%}
+                <div class="product__artist-profile" {{ block.shopify_attributes }}>
+                  {% render 'artist-profile-card', product: product %}
+                </div>
+              {%- when 'artist_information' -%}
+                {%- liquid
+                  assign artist = product.metafields.custom.artist.value
+                  if artist and artist.name
+                    assign dynamic_heading = 'Learn about ' | append: artist.name
+                  else
+                    assign dynamic_heading = block.settings.heading
+                  endif
+                -%}
+                <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
+                  <details id="Details-{{ block.id }}-{{ section.id }}" data-artist-info>
+                    <summary>
+                      <div class="summary__title">
+                        {% render 'icon-accordion', icon: block.settings.icon %}
+                        <h2 class="h4 accordion__title inline-richtext">
+                          {{ dynamic_heading | escape }}
+                        </h2>
+                      </div>
+                      {% render 'icon-caret' %}
+                    </summary>
+                    <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
+                      {% render 'artist-information', product: product %}
                     </div>
                   </details>
                 </div>
@@ -1482,6 +1550,46 @@
       ]
     },
     {
+      "type": "artist_information",
+      "name": "Artist Information",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Artist & Print Details",
+          "label": "Heading"
+        },
+        {
+          "type": "select",
+          "id": "icon",
+          "options": [
+            {
+              "value": "none",
+              "label": "None"
+            },
+            {
+              "value": "star",
+              "label": "Star"
+            },
+            {
+              "value": "heart",
+              "label": "Heart"
+            },
+            {
+              "value": "lock",
+              "label": "Lock"
+            },
+            {
+              "value": "truck",
+              "label": "Truck"
+            }
+          ],
+          "default": "star",
+          "label": "Icon"
+        }
+      ]
+    },
+    {
       "type": "popup",
       "name": "t:sections.main-product.blocks.popup.name",
       "settings": [
@@ -2395,6 +2503,11 @@
           "info": "t:sections.main-product.blocks.icon_with_text.settings.heading.info"
         }
       ]
+    },
+    {
+      "type": "artist_signature",
+      "name": "Artist Signature",
+      "settings": []
     }
   ],
   "settings": [

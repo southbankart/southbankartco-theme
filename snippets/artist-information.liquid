@@ -1,0 +1,50 @@
+{% comment %}
+  Renders artist information from metaobject
+  
+  Accepts:
+  - product: {Object} product object with artist metaobject reference
+  - heading: {String} optional custom heading, defaults to "More about {artist.name}"
+  
+  Usage:
+  {% render 'artist-information', product: product %}
+  {% render 'artist-information', product: product, heading: "Custom heading" %}
+{% endcomment %}
+
+{%- liquid
+  assign artist = product.metafields.custom.artist.value
+  assign default_heading = 'About the artist: ' | append: artist.name
+  assign section_heading = heading | default: default_heading
+-%}
+
+{%- if artist -%}
+  <div class="artist-information">
+    {%- if artist.name -%}
+      <div class="artist-header">
+        {%- if artist.website or artist.instagram -%}
+          <div class="artist-links">
+            {%- if artist.website -%}
+              <a href="{{ artist.website }}" target="_blank" rel="noopener" class="artist-link">
+                {% comment %} {% render 'icon-external-link' %} {% endcomment %}
+                <span>Artist Website</span>
+              </a>
+            {%- endif -%}
+            {%- if artist.instagram -%}
+              <a href="https://instagram.com/{{ artist.instagram }}" target="_blank" rel="noopener" class="artist-link">
+                {% render 'icon-instagram' %}
+                @{{ artist.instagram }}
+              </a>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    {%- if artist.bio -%}
+      <div class="artist-bio">
+        {{ artist.bio | metafield_tag }}
+      </div>
+    {%- endif -%}
+
+    
+  </div>
+{%- endif -%}

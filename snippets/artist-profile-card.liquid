@@ -1,0 +1,54 @@
+{% comment %}
+  Renders artist profile card for above-the-fold display
+  
+  Accepts:
+  - product: {Object} product object with artist metaobject reference
+  
+  Usage:
+  {% render 'artist-profile-card', product: product %}
+{% endcomment %}
+
+{%- liquid
+  assign artist = product.metafields.custom.artist.value
+-%}
+
+{%- if artist and artist.name -%}
+  <div class="artist-profile-card">
+    {%- if artist.profile_image -%}
+      <div class="artist-avatar">
+        <img 
+          src="{{ artist.profile_image | image_url: width: 120 }}" 
+          alt="{{ artist.name }} profile image"
+          class="artist-avatar-image"
+          loading="lazy"
+        >
+      </div>
+    {%- endif -%}
+    
+    <div class="artist-card-content">
+      <h3 class="artist-card-name">{{ artist.name }}</h3>
+      {%- if artist.title -%}
+        <p class="artist-card-title">{{ artist.title }}</p>
+      {%- else -%}
+        <p class="artist-card-title">Artist</p>
+      {%- endif -%}
+      
+      {%- if artist.website or artist.instagram -%}
+        <div class="artist-card-links">
+          {%- if artist.website -%}
+            <a href="{{ artist.website }}" target="_blank" rel="noopener" class="artist-card-link">
+              {% render 'icon-external-link' %}
+              Website
+            </a>
+          {%- endif -%}
+          {%- if artist.instagram -%}
+            <a href="https://instagram.com/{{ artist.instagram }}" target="_blank" rel="noopener" class="artist-card-link">
+              {% render 'icon-instagram' %}
+              @{{ artist.instagram }}
+            </a>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+{%- endif -%}

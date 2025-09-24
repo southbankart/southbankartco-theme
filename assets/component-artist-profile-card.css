@@ -1,0 +1,107 @@
+/* Artist Profile Card Styles */
+.artist-profile-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: rgba(var(--color-background));
+  border: 1px solid rgba(var(--color-foreground), 0.1);
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.artist-profile-card:hover {
+  border-color: rgba(var(--color-foreground), 0.2);
+  box-shadow: 0 4px 12px rgba(var(--color-foreground), 0.1);
+}
+
+.artist-avatar {
+  flex-shrink: 0;
+}
+
+.artist-avatar-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(var(--color-foreground), 0.1);
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.artist-profile-card:hover .artist-avatar-image {
+  filter: grayscale(0%);
+  border-color: rgba(var(--color-foreground), 0.2);
+}
+
+.artist-card-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.artist-card-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: rgb(var(--color-foreground));
+  margin: 0 0 0.4rem 0;
+  line-height: 1.2;
+}
+
+.artist-card-title {
+  font-size: 1.3rem;
+  color: rgba(var(--color-foreground), 0.7);
+  margin: 0 0 1rem 0;
+  font-style: italic;
+}
+
+.artist-card-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.artist-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: rgb(var(--color-link));
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.artist-card-link:hover {
+  color: rgb(var(--color-link), 0.8);
+  text-decoration: underline;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .artist-profile-card {
+    gap: 1.2rem;
+    padding: 1.2rem;
+  }
+
+  .artist-avatar-image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .artist-card-name {
+    font-size: 1.6rem;
+  }
+
+  .artist-card-title {
+    font-size: 1.2rem;
+  }
+
+  .artist-card-links {
+    gap: 0.8rem;
+  }
+
+  .artist-card-link {
+    font-size: 1.2rem;
+  }
+}

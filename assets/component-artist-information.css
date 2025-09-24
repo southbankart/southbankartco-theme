@@ -1,0 +1,179 @@
+/* Artist Information Styles */
+.artist-information {
+  margin: 1.5rem 0;
+}
+
+.artist-header {
+  margin-bottom: 1rem;
+}
+
+.artist-profile {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.artist-profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(var(--color-foreground), 0.15);
+  display: block;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  flex-shrink: 0;
+}
+
+.artist-profile-image:hover {
+  filter: grayscale(0%);
+}
+
+.artist-profile-content {
+  flex: 1;
+}
+
+.artist-profile-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: rgb(var(--color-foreground));
+  margin: 0 0 0.5rem 0;
+  line-height: 1.2;
+}
+
+.artist-profile-title {
+  font-size: 1.3rem;
+  color: rgba(var(--color-foreground), 0.7);
+  margin: 0;
+  font-style: italic;
+}
+
+.artist-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: rgb(var(--color-foreground));
+  margin: 0 0 0.8rem 0;
+}
+
+.artist-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.artist-link {
+  width: 100%;
+  gap: 0.4rem;
+  color: rgb(var(--color-link));
+  text-decoration: underline;
+  font-size: 1.4rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.artist-link:hover {
+  color: rgb(var(--color-link), 0.8);
+}
+
+.artist-bio {
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: rgb(var(--color-foreground), 0.8);
+}
+
+.artist-bio p {
+  margin: 0 0 1rem 0;
+}
+
+.artist-bio p:last-child {
+  margin-bottom: 0;
+}
+
+.artist-bio strong {
+  font-weight: 600;
+  color: rgb(var(--color-foreground), 0.75);
+}
+
+.artist-bio a {
+  color: rgb(var(--color-link));
+  text-decoration: underline;
+}
+
+.artist-bio a:hover {
+  text-decoration: underline;
+}
+
+.artist-bio h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: rgb(var(--color-foreground));
+  margin: 1.5rem 0 0.8rem 0;
+}
+
+.artist-bio h3:first-child {
+  margin-top: 0;
+}
+
+.artist-bio ul {
+  margin: 0.8rem 0;
+  padding-left: 1.5rem;
+}
+
+.artist-bio li {
+  margin-bottom: 0.4rem;
+}
+
+.print-details {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.detail-item {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: rgb(var(--color-foreground));
+}
+
+.detail-item strong {
+  color: rgb(var(--color-foreground));
+  font-weight: 600;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .artist-profile {
+    gap: 1rem;
+  }
+
+  .artist-profile-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .artist-profile-name {
+    font-size: 1.6rem;
+  }
+
+  .artist-profile-title {
+    font-size: 1.2rem;
+  }
+
+  .artist-links {
+    gap: 0.8rem;
+  }
+
+  .artist-link {
+    font-size: 1.3rem;
+  }
+
+  .artist-bio p,
+  .detail-item {
+    font-size: 1.3rem;
+  }
+}
