@@ -156,24 +156,7 @@
     height: 80px;
   }
 
-  .artist-profile-name {
-    font-size: 1.6rem;
-  }
-
-  .artist-profile-title {
-    font-size: 1.2rem;
-  }
-
   .artist-links {
     gap: 0.8rem;
-  }
-
-  .artist-link {
-    font-size: 1.3rem;
-  }
-
-  .artist-bio p,
-  .detail-item {
-    font-size: 1.3rem;
   }
 }
