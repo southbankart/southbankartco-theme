@@ -39,6 +39,7 @@
   font-weight: 500;
   color: rgb(var(--color-foreground));
   font-style: italic;
+  line-height: 1.8rem;
 }
 
 .artist-signature-title {
