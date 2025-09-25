@@ -119,9 +119,10 @@ document.addEventListener("alpine:init", () => {
             if (priceDifference > 0) {
               return "+" + this.formatMoney(priceDifference);
             } else if (priceDifference < 0) {
-              return this.formatMoney(priceDifference);
+              const diff = Math.abs(priceDifference);
+              return "-" + this.formatMoney(diff);
             } else {
-              return " ";
+              return "£0.00";
             }
           }
         }
