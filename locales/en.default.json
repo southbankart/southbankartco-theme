@@ -38,6 +38,9 @@
       }
     },
     "continue_shopping": "Continue shopping",
+    "breadcrumbs": {
+      "home": "Home"
+    },
     "pagination": {
       "label": "Pagination",
       "page": "Page {{ number }}",

@@ -1,0 +1,163 @@
+{%- unless template == 'index' or template == 'cart' or template == 'list-collections' or template == '404' -%}
+  {%- assign t = template | split: '.' | first -%}
+
+  <nav class="breadcrumb" role="navigation" aria-label="breadcrumbs">
+    <ol class="breadcrumb__list">
+      <li class="breadcrumb__item">
+        <a class="breadcrumb__link" href="{{ routes.root_url }}">{{ 'general.breadcrumbs.home' | t }}</a>
+      </li>
+
+      {%- case t -%}
+        {%- when 'page' -%}
+          <li class="breadcrumb__item">
+            <span class="breadcrumb__current" aria-current="page">{{ page.title }}</span>
+          </li>
+        {%- when 'product' -%}
+          {%- comment -%} Try to get collection from various sources {%- endcomment -%}
+          {%- assign breadcrumb_collection = collection -%}
+          
+          {%- comment -%} Check if we're in a collection context via path-based routing {%- endcomment -%}
+          {%- if breadcrumb_collection == blank -%}
+            {%- comment -%} Extract collection from URL path (e.g., /collections/london-prints/products/product-handle) {%- endcomment -%}
+            {%- assign url_parts = request.path | split: '/' -%}
+            {%- for part in url_parts -%}
+              {%- if part == 'collections' -%}
+                {%- assign collection_handle_index = forloop.index0 | plus: 1 -%}
+                {%- assign collection_handle = url_parts[collection_handle_index] -%}
+                {%- for collection in product.collections -%}
+                  {%- if collection.handle == collection_handle -%}
+                    {%- assign breadcrumb_collection = collection -%}
+                    {%- break -%}
+                  {%- endif -%}
+                {%- endfor -%}
+                {%- break -%}
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endif -%}
+          
+          {%- comment -%} If no collection context, find the best collection to show {%- endcomment -%}
+          {%- if breadcrumb_collection == blank -%}
+            {%- comment -%} Priority order: specific preferred collections, then featured, then exclude common system collections {%- endcomment -%}
+            {%- assign excluded_handles = 'all,frontpage,featured' | split: ',' -%}
+            
+            {%- assign breadcrumb_collection = null -%}
+            
+            {%- comment -%} First, try to find a preferred collection {%- endcomment -%}
+            {%- for collection in product.collections -%}
+              {%- if preferred_handles contains collection.handle -%}
+                {%- assign breadcrumb_collection = collection -%}
+                {%- break -%}
+              {%- endif -%}
+            {%- endfor -%}
+            
+            {%- comment -%} Second, try to find a featured collection {%- endcomment -%}
+            {%- if breadcrumb_collection == blank -%}
+              {%- for collection in product.collections -%}
+                {%- unless excluded_handles contains collection.handle -%}
+                  {%- if collection.featured -%}
+                    {%- assign breadcrumb_collection = collection -%}
+                    {%- break -%}
+                  {%- endif -%}
+                {%- endunless -%}
+              {%- endfor -%}
+            {%- endif -%}
+            
+            {%- comment -%} Third, get the first non-excluded collection {%- endcomment -%}
+            {%- if breadcrumb_collection == blank -%}
+              {%- for collection in product.collections -%}
+                {%- unless excluded_handles contains collection.handle -%}
+                  {%- assign breadcrumb_collection = collection -%}
+                  {%- break -%}
+                {%- endunless -%}
+              {%- endfor -%}
+            {%- endif -%}
+            
+            {%- comment -%} Last resort: use any collection {%- endcomment -%}
+            {%- if breadcrumb_collection == blank -%}
+              {%- assign breadcrumb_collection = product.collections.first -%}
+            {%- endif -%}
+          {%- endif -%}
+          
+          {%- if breadcrumb_collection and breadcrumb_collection.url -%}
+            <li class="breadcrumb__item">
+              <a class="breadcrumb__link" href="{{ breadcrumb_collection.url }}">{{ breadcrumb_collection.title }}</a>
+            </li>
+          {%- endif -%}
+          <li class="breadcrumb__item">
+            <span class="breadcrumb__current" aria-current="page">{{ product.title }}</span>
+          </li>
+        {%- when 'collection' and collection.handle -%}
+          {%- if current_tags -%}
+            <li class="breadcrumb__item">
+              <a class="breadcrumb__link" href="{{ collection.url }}">{{ collection.title }}</a>
+            </li>
+            <li class="breadcrumb__item">
+              <span class="breadcrumb__current" aria-current="page">{{ current_tags | join: " + " }}</span>
+            </li>
+          {%- else -%}
+            <li class="breadcrumb__item">
+              <span class="breadcrumb__current" aria-current="page">{{ collection.title }}</span>
+            </li>
+          {%- endif -%}
+        {%- when 'blog' -%}
+          {%- if current_tags -%}
+            <li class="breadcrumb__item">
+              <a class="breadcrumb__link" href="{{ blog.url }}">{{ blog.title }}</a>
+            </li>
+            <li class="breadcrumb__item">
+              <span class="breadcrumb__current" aria-current="page">{{ current_tags | join: " + " }}</span>
+            </li>
+          {%- else -%}
+            <li class="breadcrumb__item">
+              <span class="breadcrumb__current" aria-current="page">{{ blog.title }}</span>
+            </li>
+          {%- endif -%}
+        {%- when 'article' -%}
+          <li class="breadcrumb__item">
+            <a class="breadcrumb__link" href="{{ blog.url }}">{{ blog.title }}</a>
+          </li>
+          <li class="breadcrumb__item">
+            <span class="breadcrumb__current" aria-current="page">{{ article.title }}</span>
+          </li>
+        {%- when 'customers/account' -%}
+          <li class="breadcrumb__item">
+            <span class="breadcrumb__current" aria-current="page">{{ 'customer.account.title' | t }}</span>
+          </li>
+        {%- when 'customers/order' -%}
+          <li class="breadcrumb__item">
+            <a class="breadcrumb__link" href="{{ routes.account_url }}">{{ 'customer.account.title' | t }}</a>
+          </li>
+          <li class="breadcrumb__item">
+            <span class="breadcrumb__current" aria-current="page">{{ 'customer.orders.title' | t }}</span>
+          </li>
+        {%- when 'customers/addresses' -%}
+          <li class="breadcrumb__item">
+            <a class="breadcrumb__link" href="{{ routes.account_url }}">{{ 'customer.account.title' | t }}</a>
+          </li>
+          <li class="breadcrumb__item">
+            <span class="breadcrumb__current" aria-current="page">{{ 'customer.addresses.title' | t }}</span>
+          </li>
+        {%- when 'customers/login' -%}
+          <li class="breadcrumb__item">
+            <span class="breadcrumb__current" aria-current="page">{{ 'customer.login_page.title' | t }}</span>
+          </li>
+        {%- when 'customers/register' -%}
+          <li class="breadcrumb__item">
+            <span class="breadcrumb__current" aria-current="page">{{ 'customer.register.title' | t }}</span>
+          </li>
+        {%- when 'customers/activate_account' -%}
+          <li class="breadcrumb__item">
+            <span class="breadcrumb__current" aria-current="page">{{ 'customer.activate_account.title' | t }}</span>
+          </li>
+        {%- when 'customers/reset_password' -%}
+          <li class="breadcrumb__item">
+            <span class="breadcrumb__current" aria-current="page">{{ 'customer.reset_password.title' | t }}</span>
+          </li>
+        {%- else -%}
+          <li class="breadcrumb__item">
+            <span class="breadcrumb__current" aria-current="page">{{ page_title }}</span>
+          </li>
+      {%- endcase -%}
+    </ol>
+  </nav>
+{%- endunless -%}
