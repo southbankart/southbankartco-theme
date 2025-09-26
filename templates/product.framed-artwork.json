@@ -177,6 +177,12 @@
         "padding_bottom": 28
       }
     },
+    "bespoke-frame-upsell": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'quote-request-form' %}"
+      }
+    },
     "1757839539b2ce2923": {
       "type": "apps",
       "blocks": {
@@ -201,5 +207,10 @@
       }
     }
   },
-  "order": ["main", "related-products", "1757839539b2ce2923"]
+  "order": [
+    "main",
+    "related-products",
+    "1757839539b2ce2923",
+    "bespoke-frame-upsell"
+  ]
 }
