@@ -1,0 +1,96 @@
+{{ 'component-quote-request.css' | asset_url | stylesheet_tag }}
+
+<div class="quote-request-banner" 
+     style="background-image: url('{{ 'B937BAC3-DA7C-422A-A268-F303AFD9B708.jpg' | file_url }}');">
+  
+  <div class="banner__content banner__content--middle-center page-width">
+    <div class="banner__box content-container content-container--full-width-mobile" style="max-width: 600px;">
+      
+      <h2 class="banner__heading inline-richtext h1" style="color: white; margin-bottom: 1rem;">
+        Need a custom frame?
+      </h2>
+      
+      <div class="banner__text rte body" style="color: white; margin-bottom: 2rem;">
+        <p>Get a personalised quote for bespoke framing. Our expert team will help you create the perfect frame with premium materials, custom sizing, and professional finishing.</p>
+      </div>
+      
+      <div class="simple-form-wrapper">
+        <form action="/contact#contact_form" method="post" id="quote_request_form">
+          <input type="hidden" name="form_type" value="contact">
+          <input type="hidden" name="utf8" value="✓">
+          <input type="hidden" name="contact[subject]" value="Bespoke Framing Quote Request">
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="artwork_type" class="form-label">Artwork Type</label>
+              <select name="contact[artwork_type]" id="artwork_type" class="form-input" required>
+                <option value="">Select artwork type</option>
+                <option value="Print/Poster">Print/Poster</option>
+                <option value="Original Painting">Original Painting</option>
+                <option value="Photograph">Photograph</option>
+                <option value="Canvas">Canvas</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="artwork_size" class="form-label">Artwork Size</label>
+              <input type="text" name="contact[artwork_size]" id="artwork_size" class="form-input" placeholder="e.g., 30cm x 40cm" required>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="frame_preference" class="form-label">Frame Style</label>
+              <select name="contact[frame_preference]" id="frame_preference" class="form-input">
+                <option value="">No preference</option>
+                <option value="Wood">Wood</option>
+                <option value="Metal">Metal</option>
+                <option value="Minimal/Simple">Minimal/Simple</option>
+                <option value="Ornate/Decorative">Ornate/Decorative</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="budget_range" class="form-label">Budget Range</label>
+              <select name="contact[budget_range]" id="budget_range" class="form-input">
+                <option value="">Select budget range</option>
+                <option value="Under £100">Under £100</option>
+                <option value="£100-£200">£100-£200</option>
+                <option value="£200-£300">£200-£300</option>
+                <option value="£300-£500">£300-£500</option>
+                <option value="Over £500">Over £500</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="contact_name" class="form-label">Your Name</label>
+            <input type="text" name="contact[name]" id="contact_name" class="form-input" required>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact_email" class="form-label">Email Address</label>
+              <input type="email" name="contact[email]" id="contact_email" class="form-input" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="contact_phone" class="form-label">Phone Number (optional)</label>
+              <input type="tel" name="contact[phone]" id="contact_phone" class="form-input">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="additional_notes" class="form-label">Additional Notes (optional)</label>
+            <textarea name="contact[additional_notes]" id="additional_notes" class="form-input" rows="3"></textarea>
+          </div>
+          
+          <button type="submit" class="form-button">Request Quote</button>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
