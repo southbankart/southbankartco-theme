@@ -1,0 +1,49 @@
+{% comment %}
+  Shipping structured data for SEO
+  
+  Usage:
+  {% render 'shipping-schema', product: product %}
+{% endcomment %}
+
+{%- liquid
+  assign standard_shipping_price = settings.standard_shipping_price | default: 495
+  assign standard_shipping_name = settings.standard_shipping_name | default: "Standard Delivery"
+  assign standard_shipping_days = settings.standard_shipping_days | default: "3-5 working days"
+  assign free_delivery_threshold = settings.free_delivery_threshold | default: 5000
+  
+  # Extract delivery days from the text (e.g., "3-5 working days" -> min: 3, max: 5)
+  assign delivery_days_match = standard_shipping_days | split: ' '
+  assign delivery_days_range = delivery_days_match[0] | split: '-'
+  assign min_delivery_days = delivery_days_range[0] | plus: 0
+  assign max_delivery_days = delivery_days_range[1] | default: delivery_days_range[0] | plus: 0
+-%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "OfferShippingDetails",
+  "shippingDestination": {
+    "@type": "DefinedRegion",
+    "name": "United Kingdom"
+  },
+  "shippingRate": {
+    "@type": "MonetaryAmount",
+    "currency": "GBP",
+    "value": "{{ standard_shipping_price | divided_by: 100.0 }}"
+  },
+  "doesNotShip": false,
+  "shippingPolicy": "{{ shop.shipping_policy.url | default: '/pages/shipping' }}",
+  "deliveryTime": {
+    "@type": "ShippingDeliveryTime",
+    "minDeliveryDays": {{ min_delivery_days }},
+    "maxDeliveryDays": {{ max_delivery_days }},
+    "businessDays": true
+  },
+  "shippingLabel": "{{ standard_shipping_name }}",
+  "freeShippingThreshold": {
+    "@type": "MonetaryAmount",
+    "currency": "GBP",
+    "value": "{{ free_delivery_threshold | divided_by: 100.0 }}"
+  }
+}
+</script>

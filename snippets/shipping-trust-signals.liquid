@@ -1,9 +1,12 @@
 {% comment %}
-  Simple shipping information snippet
+  Simple shipping information snippet with SEO structured data
   
   Usage:
   {% render 'shipping-trust-signals' %}
 {% endcomment %}
+
+{%- comment -%} Include structured data for SEO {%- endcomment -%}
+{% render 'shipping-schema' %}
 
 {%- liquid
   assign free_delivery_threshold = settings.free_delivery_threshold | default: 5000
