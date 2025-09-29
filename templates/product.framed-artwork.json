@@ -99,21 +99,12 @@
             "icon": "star"
           }
         },
-        "quality_guarantee": {
+        "full_service": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Quality & Guarantee",
-            "icon": "lock",
-            "content": "<p><strong>Print Quality:</strong> Fine art Giclée prints with archival inks<br><strong>Paper Quality:</strong> High-quality paper for longevity<br><strong>Color Accuracy:</strong> Professionally calibrated printing<br><strong>Return Policy:</strong> Please check our return policy for details<br><strong>Framing:</strong> Hand-finished by skilled craftspeople</p>",
-            "page": ""
-          }
-        },
-        "shipping_delivery": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Shipping & Delivery",
-            "icon": "truck",
-            "content": "<p><strong>Collection:</strong> Available at our London studio<br><strong>Standard Delivery:</strong> Please check shipping options at checkout<br><strong>Express Delivery:</strong> Available for faster delivery<br><strong>Framed Items:</strong> Special protective packaging<br><strong>International:</strong> Contact us for shipping options</p>",
+            "heading": "Full End-to-End Service",
+            "icon": "star",
+            "content": "<p>From initial print to final frame, every step is completed in our London studio by skilled craftspeople. We offer a complete service that ensures your artwork receives the care and attention it deserves, creating pieces that will be treasured for generations.</p><p><strong>Fine Art Printing:</strong> Professional Giclée prints with archival inks<br><strong>Color Accuracy:</strong> Professionally calibrated for true-to-life reproduction<br><strong>Premium Materials:</strong> High-quality papers and frames chosen for longevity<br><strong>Hand-Finished Framing:</strong> Every frame crafted by skilled craftspeople<br><strong>Custom Options:</strong> Bespoke framing available for unique requirements<br><strong>Quality Control:</strong> Every piece inspected before dispatch</p>",
             "page": ""
           }
         },
@@ -140,8 +131,7 @@
         "shipping_trust_signals",
         "share",
         "artist_information",
-        "quality_guarantee",
-        "shipping_delivery",
+        "full_service",
         "care_instructions"
       ],
       "settings": {
