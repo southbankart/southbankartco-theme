@@ -117,10 +117,10 @@ document.addEventListener("alpine:init", () => {
           if (variant && referenceVariant) {
             const priceDifference = variant.price - referenceVariant.price;
             if (priceDifference > 0) {
-              return "+" + this.formatMoney(priceDifference);
+              return "+ " + this.formatMoney(priceDifference);
             } else if (priceDifference < 0) {
               const diff = Math.abs(priceDifference);
-              return "-" + this.formatMoney(diff);
+              return "- " + this.formatMoney(diff);
             } else {
               return "£0.00";
             }

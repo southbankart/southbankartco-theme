@@ -186,10 +186,6 @@
     "1757839539b2ce2923": {
       "type": "apps",
       "blocks": {
-        "globo_product_option_app_block_bQJwfN": {
-          "type": "shopify://apps/globo-product-option/blocks/app-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
-          "settings": {}
-        },
         "judge_me_reviews_review_widget_RrmhRY": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
@@ -199,7 +195,6 @@
         }
       },
       "block_order": [
-        "globo_product_option_app_block_bQJwfN",
         "judge_me_reviews_review_widget_RrmhRY"
       ],
       "settings": {
