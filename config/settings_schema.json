@@ -1303,6 +1303,34 @@
     ]
   },
   {
+    "name": "Shipping & Delivery",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Standard Shipping Method"
+      },
+      {
+        "type": "number",
+        "id": "standard_shipping_price",
+        "label": "Standard shipping price (in pence)",
+        "default": 495,
+        "info": "Amount in pence (e.g., 495 = £4.95)"
+      },
+      {
+        "type": "text",
+        "id": "standard_shipping_name",
+        "label": "Shipping method name",
+        "default": "Standard Delivery"
+      },
+      {
+        "type": "text",
+        "id": "standard_shipping_days",
+        "label": "Delivery timeframe",
+        "default": "3-5 working days"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.social-media.name",
     "settings": [
       {

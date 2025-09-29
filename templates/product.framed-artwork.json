@@ -137,6 +137,7 @@
         "quantity_selector",
         "price",
         "buy_buttons",
+        "shipping_trust_signals",
         "share",
         "artist_information",
         "quality_guarantee",
@@ -194,9 +195,7 @@
           }
         }
       },
-      "block_order": [
-        "judge_me_reviews_review_widget_RrmhRY"
-      ],
+      "block_order": ["judge_me_reviews_review_widget_RrmhRY"],
       "settings": {
         "include_margins": true
       }
