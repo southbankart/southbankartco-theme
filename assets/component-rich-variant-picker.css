@@ -120,6 +120,7 @@
   font-size: 1.4rem;
   color: rgb(var(--color-link), 0.9);
   font-weight: 600;
+  visibility: hidden;
 }
 
 .rich-variant-options .rich-variant-price.selected-label {
