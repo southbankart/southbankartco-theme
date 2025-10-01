@@ -280,6 +280,11 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
+
+    <!-- Help Scout Beacon -->
+    <script
+      type="text/javascript">!function (e, t, n) {function a() {var e = t.getElementsByTagName("script")[0], n = t.createElement("script"); n.type = "text/javascript", n.async = !0, n.src = "https://beacon-v2.helpscout.net", e.parentNode.insertBefore(n, e)} if (e.Beacon = n = function (t, n, a) {e.Beacon.readyQueue.push({method: t, options: n, data: a})}, n.readyQueue = [], "complete" === t.readyState) return a(); e.attachEvent ? e.attachEvent("onload", a) : e.addEventListener("load", a, !1)}(window, document, window.Beacon || function () { });</script>
+    <script type="text/javascript">window.Beacon('init', '96d24087-85dc-4023-9753-db34f2153537')</script>
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
